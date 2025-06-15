@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
+
+const logo = require('./assets/logo_ecochiloe.png');
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Image source={logo} style={{ 
+        widht: 200, 
+        height: 200,
+        resizeMode: 'center',
+        }} />
       <StatusBar style="auto" />
+      <Text>Tonto el que lea</Text>
     </View>
   );
 }
@@ -13,7 +20,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#00bf63',
     alignItems: 'center',
     justifyContent: 'center',
   },
