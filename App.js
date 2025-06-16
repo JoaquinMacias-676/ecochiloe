@@ -6,25 +6,35 @@ const logo = require('./assets/ecochiloe_logo.png');
 export default function App() {
   return (
     <View style={styles.container}> 
-      <Image source={logo} style={{ 
-        widht: 200, 
-        height: 200,
-        resizeMode: 'center',
-        }} />
       <Text style={{
         color: 'white',
         fontSize: 20,
-        fontWeight: 'bold'
+        fontWeight: 'center'
       }}
-      >EcoChiloé</Text>
+      >Mis Cultivos</Text>
       <StatusBar style="auto" />
       <Pressable
-        onPress={() => Alert.alert('¡Alerta!', 'Este es un mensaje')}
         style={({ pressed }) => [
-          { padding: 10, borderRadius: 5, backgroundColor: pressed ? '#cce7cc' : '#39b54'}
+          { marginVertical: 10, padding: 50, borderRadius: 16, borderWidth: 2, bordercolor: '#0c7744', backgroundColor: pressed ? '#0c7744' : '#78e0af'}
         ]}
       >
-        <Text style={{ color: 'fff', fontWeight: '600' }}>Presiona Aquí</Text>
+        <Text style={{ color: '#fff', fontWeight: '800' }}>¡Agrega un Cultivo!</Text>
+      </Pressable>
+
+      <Pressable
+        style={({ pressed }) => [
+          { marginVertical: 10, padding: 50, borderRadius: 16, borderWidth: 2, bordercolor: '#0c7744', backgroundColor: pressed ? '#0c7744' : '#78e0af'}
+        ]}
+      >
+        <Text style={{ color: '#fff', fontWeight: '800' }}>¡Agrega un Cultivo!</Text>
+      </Pressable>
+
+      <Pressable
+        style={({ pressed }) => [
+          { marginVertical: 10, padding: 50, borderRadius: 16, borderWidth: 2, bordercolor: '#0c7744', backgroundColor: pressed ? '#0c7744' : '#78e0af'}
+        ]}
+      >
+        <Text style={{ color: '#fff', fontWeight: '800' }}>¡Agrega un Cultivo!</Text>
       </Pressable>
     </View>
   );
@@ -35,6 +45,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#00bf63',
     alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 150
   },
 });
