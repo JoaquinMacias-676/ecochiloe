@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   botones: {
     marginVertical: 150, 
     width: 150,
-    height: 75, 
+    height: 60, 
     borderRadius: 16, 
     borderWidth: 2,
     justifyContent: 'center',
