@@ -8,6 +8,7 @@ export default function Login({ navigation }) {
         source={require('./assets/ecochiloe_3.png')}
         style={styles.logo_estilo}
         />
+      <Text style={styles.bienvenida_texto}>¡Bienvenido(a)!</Text>
       <Pressable
         onPress={() => navigation.navigate('Home')}
         style={({ pressed }) => [ 
@@ -31,6 +32,14 @@ const styles = StyleSheet.create({
     paddingTop: 150,
   },
 
+// Estulo para el texto de bienvenida
+  bienvenida_texto: {
+    marginVertical: -30,
+    fontSize: 20,
+    color: '#00000',
+    fontWeight: 'bold',
+  },
+
 // Estilo para el texto de los botones
   textocolor_botones: {
     fontSize: 18,
@@ -43,7 +52,7 @@ const styles = StyleSheet.create({
 
 // Estilo para los botones
   botones: {
-    marginVertical: 150, 
+    marginVertical: 180, 
     width: 150,
     height: 60, 
     borderRadius: 16, 
@@ -56,8 +65,8 @@ const styles = StyleSheet.create({
 // Estilo Logo
   logo_estilo: {
     marginVertical: -50,
-    width: 250,
-    height: 250,
+    width: 275,
+    height: 275,
     resizeMode: 'contain',
 
   }
