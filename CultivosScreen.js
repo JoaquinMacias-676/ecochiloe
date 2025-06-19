@@ -1,13 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Pressable} from 'react-native';
+import { StyleSheet, Text, View, Pressable, Image} from 'react-native';
 
-export default function Cultivos() {
+export default function Cultivos({ navigation }) {
   return (
     <View style={styles.container}>
       <Pressable
+        onPress={() => navigation.navigate('Home')}
+        style={styles.flechaboton}>
+        <Image
+          source={require('./assets/flecha_atras.png')}
+          style={[styles.flechaimagen, { tintColor: '#000000'}]}
+        />
+      </Pressable>
+
+      <Pressable
         style={({ pressed }) => [ 
             styles.botones,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
+            { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }
         ]}>
         <Text style={styles.textocolor_botones}>Tubérculos</Text>
       </Pressable>
@@ -39,6 +48,7 @@ export default function Cultivos() {
   );
 }
 
+// Creando los diferentes estilos
 const styles = StyleSheet.create({
   
 // Estilo del fondo
@@ -59,15 +69,6 @@ const styles = StyleSheet.create({
     textShadowRadius: 1,
   },
 
-// Estilo para el contador de cultivos
-  textocolor_contador: {
-    fontSize: 20,
-    color: 'white',
-    fontWeight: 'bold',
-    textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
-  },  
 // Estilo para el texto de los botones
   textocolor_botones: {
     fontSize: 15,
@@ -87,5 +88,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderColor: '#0c7744', 
+  },
+
+// Estilo Boton flecha
+  flechaboton: {
+    position: 'absolute',
+    top: 50,
+    left: -10,
+    padding: 30,
+  },
+
+// Estilo imagen flecha
+  flechaimagen: {
+    width: 30,
+    height: 30,
+    resizeMode: 'contain',
+    color: '#000000',
   },
 });

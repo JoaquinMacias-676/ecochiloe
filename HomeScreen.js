@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 
-export default function App() {
+export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.textocolor}>Mis Cultivos</Text><StatusBar style="auto" />
       <Text style={styles.textocolor_contador}>0/3</Text>
       <Pressable
+        onPress={() => navigation.navigate('Cultivos')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
@@ -15,6 +16,7 @@ export default function App() {
       </Pressable>
 
       <Pressable
+        onPress={() => navigation.navigate('Cultivos')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
@@ -23,6 +25,7 @@ export default function App() {
       </Pressable>
 
       <Pressable
+        onPress={() => navigation.navigate('Cultivos')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
@@ -65,7 +68,7 @@ const styles = StyleSheet.create({
   },  
 // Estilo para el texto de los botones
   textocolor_botones: {
-    fontSize: 15,
+    fontSize: 18,
     color: 'white',
     fontWeight: 'bold',
     textShadowColor: 'black',
@@ -76,7 +79,7 @@ const styles = StyleSheet.create({
 // Estilo para los botones
   botones: {
     marginVertical: 16, 
-    width: 200,
+    width: 250,
     height: 125, 
     borderRadius: 16, 
     borderWidth: 2,
