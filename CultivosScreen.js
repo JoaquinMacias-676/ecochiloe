@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable} from 'react-native';
 
-function Home() {
+export default function Cultivos() {
   return (
     <View style={styles.container}>
       <Pressable
