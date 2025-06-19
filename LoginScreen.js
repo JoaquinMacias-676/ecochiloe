@@ -14,7 +14,7 @@ export default function Login({ navigation }) {
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
         ]}>
-        <Text style={styles.textocolor_botones}>Ingresar</Text>
+        <Text style={styles.textocolor_botones}>INICIAR</Text>
       </Pressable>
     </View>
   );
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
 
 // Estilo Logo
   logo_estilo: {
+    marginVertical: -50,
     width: 250,
     height: 250,
     resizeMode: 'contain',
