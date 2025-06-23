@@ -12,8 +12,7 @@ export default function Login({ navigation }) {
         onPress={() => navigation.navigate('Home')}
         style={({ pressed }) => [ 
             styles.botones,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
-        ]}>
+            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }]}>
         <Text style={styles.textocolor_botones}>INICIAR</Text>
       </Pressable>
     </View>

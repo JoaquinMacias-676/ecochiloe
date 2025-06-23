@@ -3,15 +3,43 @@ import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
 export default function Tuberculos({ navigation }) {
     return (
         <View style={styles.container}>
+            <View style={styles.botones_horizontal}>
             <Pressable
                 onPress={() => navigation.navigate('Home')}
                 style={({ pressed }) => [ 
                     styles.botones,
-                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }
-                ]}>
-            </Pressable> 
+                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                <Text style={styles.papas}>Papa Bruja</Text>
+            </Pressable>
+
+            <Pressable
+                onPress={() => navigation.navigate('Home')}
+                style={({ pressed }) => [ 
+                    styles.botones,
+                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                <Text style={styles.papas}>Papa Pukará</Text>
+            </Pressable>
+            </View>
+
+            <View style={styles.botones_horizontal}>
+            <Pressable
+                onPress={() => navigation.navigate('Home')}
+                style={({ pressed }) => [ 
+                    styles.botones,
+                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                <Text style={styles.papas}>Papa Murta Ojuda</Text>
+            </Pressable>
+
+            <Pressable
+                onPress={() => navigation.navigate('Home')}
+                style={({ pressed }) => [ 
+                    styles.botones,
+                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                <Text style={styles.papas}>Papa Cacho de Toro</Text>
+            </Pressable>
+            </View>  
         </View>
-    );
+      );
 }
 
 // Creando los diferentes estilos
@@ -37,13 +65,30 @@ const styles = StyleSheet.create({
 
 // Estilo para los botones
   botones: {
-    marginVertical: 10, 
-    width: 250,
-    height: 85, 
+    marginVertical: 10,
+    marginHorizontal: 10, 
+    width: 160,
+    height: 200, 
     borderRadius: 16, 
     borderWidth: 2,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     borderColor: '#0c7744', 
+  },
+
+// Estilo para que los botones esten uno al lado del otro
+  botones_horizontal: {
+    flexDirection: 'row',
+  },
+
+// Texto de Papas
+  papas: {
+    fontSize: 15,
+    color: 'white',
+    fontWeight: 'Black',
+    paddingTop: 20,
+    textShadowColor: 'black',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 1,
   },
 });

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import LoginScreen from './LoginScreen';
 import HomeScreen from './HomeScreen';
 import SelectCultivoScreen from './SelectCultivoScreen';
