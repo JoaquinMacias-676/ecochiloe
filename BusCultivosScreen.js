@@ -1,19 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Pressable, Image} from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 
-export default function Cultivos({ navigation }) {
+export default function BusquedaCultivos({ navigation }) {
   return (
     <View style={styles.container}>
-      <Pressable
-        onPress={() => navigation.navigate('Home')}
-        style={styles.flechaboton}>
-        <Image
-          source={require('./assets/flecha_atras.png')}
-          style={[styles.flechaimagen, { tintColor: '#000000'}]}
-        />
-      </Pressable>
 
       <Pressable
+        onPress={() => navigation.navigate('Home')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }
@@ -88,21 +80,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderColor: '#0c7744', 
-  },
-
-// Estilo Boton flecha
-  flechaboton: {
-    position: 'absolute',
-    top: 50,
-    left: -10,
-    padding: 30,
-  },
-
-// Estilo imagen flecha
-  flechaimagen: {
-    width: 30,
-    height: 30,
-    resizeMode: 'contain',
-    color: '#000000',
   },
 });

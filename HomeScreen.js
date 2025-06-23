@@ -1,13 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.textocolor}>Mis Cultivos</Text><StatusBar style="auto" />
+      <Text style={styles.textocolor}>Mis Cultivos</Text>
       <Text style={styles.textocolor_contador}>0/3</Text>
       <Pressable
-        onPress={() => navigation.navigate('Cultivos')}
+        onPress={() => navigation.navigate('SeleccionCultivo')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
@@ -16,7 +15,7 @@ export default function Home({ navigation }) {
       </Pressable>
 
       <Pressable
-        onPress={() => navigation.navigate('Cultivos')}
+        onPress={() => navigation.navigate('SeleccionCultivo')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
@@ -25,7 +24,7 @@ export default function Home({ navigation }) {
       </Pressable>
 
       <Pressable
-        onPress={() => navigation.navigate('Cultivos')}
+        onPress={() => navigation.navigate('SeleccionCultivo')}
         style={({ pressed }) => [ 
             styles.botones,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
@@ -54,7 +53,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textShadowColor: 'black',
     textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
+    textShadowRadius: -1,
   },
 
 // Estilo para el contador de cultivos
