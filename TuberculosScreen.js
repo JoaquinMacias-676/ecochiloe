@@ -8,8 +8,8 @@ export default function Tuberculos({ navigation }) {
             onPress={() => navigation.navigate('SeleccionCultivo')}
             style={styles.flechaboton}>
             <Image
-              source={require('./assets/flecha_atras.png')}
-              style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
+                source={require('./assets/flecha_atras.png')}
+                style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
           </Pressable>
             <View style={styles.botones_horizontal_cultivos}>
             <Pressable
@@ -18,9 +18,9 @@ export default function Tuberculos({ navigation }) {
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                 <Text style={styles.papas}>Papa Bruja</Text>
-                <Image
+                <Image 
                     source={require('./assets/papa_bruja.png')}
-                    style={styles.cultivos_iconos}/>
+                    style={styles.cultivos_iconos} />
             </Pressable>
 
             <Pressable
@@ -29,6 +29,9 @@ export default function Tuberculos({ navigation }) {
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                 <Text style={styles.papas}>Papa Pukará</Text>
+                <Image
+                    source={require('./assets/papa_pukara.png')}
+                    style={styles.cultivos_iconos_papa_pukara} />
             </Pressable>
             </View>
 
@@ -39,6 +42,9 @@ export default function Tuberculos({ navigation }) {
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                 <Text style={styles.papas}>Papa Murta Ojuda</Text>
+                <Image
+                    source={require('./assets/papa_murta_ojuda.png')}
+                    style={styles.cultivos_iconos} />
             </Pressable>
 
             <Pressable
@@ -47,6 +53,9 @@ export default function Tuberculos({ navigation }) {
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                 <Text style={styles.papas}>Papa Cacho de Toro</Text>
+                <Image
+                    source={require('./assets/papa_cacho_de_toro.png')} 
+                    style={styles.cultivos_iconos} />
             </Pressable>
             </View>  
         </View>
