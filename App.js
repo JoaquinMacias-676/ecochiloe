@@ -2,6 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+// Interfaces
 import LoginScreen from './LoginScreen';
 import HomeScreen from './HomeScreen';
 import SelectCultivoScreen from './SelectCultivoScreen';
@@ -10,6 +12,10 @@ import TuberculosScreen from './TuberculosScreen';
 import HortalizasScreen from './HortalizasScreen';
 import FrutasScreen from './FrutasScreen';
 import CerealesScreen from './CerealesScreen';
+
+//Pantallas del tab
+import PerfilScreen from './PerfilScreen';
+import MisCultivosScreen from './MisCultivosScreen';
 
 const Stack = createNativeStackNavigator();
 

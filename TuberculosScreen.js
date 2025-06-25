@@ -3,6 +3,13 @@ import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
 export default function Tuberculos({ navigation }) {
     return (
         <View style={styles.container}>
+          <Pressable
+            onPress={() => navigation.navigate('SeleccionCultivo')}
+            style={styles.flechaboton}>
+            <Image
+              source={require('./assets/flecha_atras.png')}
+              style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
+          </Pressable>
             <View style={styles.botones_horizontal}>
             <Pressable
                 onPress={() => navigation.navigate('Home')}
@@ -90,5 +97,21 @@ const styles = StyleSheet.create({
     textShadowColor: 'black',
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 1,
+  },
+
+// Estilo Boton flecha
+  flechaboton: {
+    position: 'absolute',
+    top: 50,
+    left: -10,
+    padding: 30,
+  },
+
+// Estilo imagen flecha
+  flechaimagen: {
+    width: 30,
+    height: 30,
+    resizeMode: 'contain',
+    color: '#000000',
   },
 });

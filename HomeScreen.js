@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 25,
     fontWeight: 'bold',
+    fontFamily: 'Baloo 2',
     textShadowColor: 'black',
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: -1,
