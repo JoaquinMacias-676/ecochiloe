@@ -29,14 +29,38 @@ export const styles = StyleSheet.create({
     textShadowRadius: 1,
   },
 
-// Estilo para los botones
-  botones: {
+// Texto de Papas
+  papas: {
+    fontSize: 15,
+    color: 'white',
+    fontWeight: 'Black',
+    paddingTop: 20,
+    textShadowColor: 'black',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 1,
+  },
+
+// Estilo para los botones de la pantalla principal
+  botones_principal: {
     marginVertical: 10, 
     width: 288,
     height: 85, 
     borderRadius: 16, 
     borderWidth: 2,
     justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#0c7744', 
+  },
+
+// Estilo para los botones de los tipos de cultivos
+  botones_clasificacion_cultivos: {
+    marginVertical: 10,
+    marginHorizontal: 10, 
+    width: 160,
+    height: 200, 
+    borderRadius: 16, 
+    borderWidth: 2,
+    justifyContent: 'flex-start',
     alignItems: 'center',
     borderColor: '#0c7744', 
   },
@@ -55,5 +79,9 @@ export const styles = StyleSheet.create({
     height: 30,
     resizeMode: 'contain',
     color: '#000000',
+  },
+// Estilo para que los botones esten uno al lado del otro
+  botones_horizontal_cultivos: {
+    flexDirection: 'row',
   },
 });
