@@ -87,8 +87,17 @@ export const styles = StyleSheet.create({
 
 // Estilo iconos de cultivos
   cultivos_iconos: {
+    width: 125,
+    height: 125,
+    marginTop: 20,
+    resizeMode: 'contain',
+  },
+
+  // Estilo iconos de cultivos
+  cultivos_iconos_papa_pukara: {
     width: 100,
     height: 100,
+    marginTop: 30,
     resizeMode: 'contain',
   },
 });
