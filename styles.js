@@ -84,4 +84,11 @@ export const styles = StyleSheet.create({
   botones_horizontal_cultivos: {
     flexDirection: 'row',
   },
+
+// Estilo iconos de cultivos
+  cultivos_iconos: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
+  },
 });
