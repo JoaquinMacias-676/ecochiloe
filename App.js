@@ -12,6 +12,7 @@ import TuberculosScreen from './TuberculosScreen';
 import HortalizasScreen from './HortalizasScreen';
 import FrutasScreen from './FrutasScreen';
 import CerealesScreen from './CerealesScreen';
+import InfoPapaBrujaScreen from './InfoPapaBrujaScreen';
 
 //Pantallas del tab
 import PerfilScreen from './PerfilScreen';
@@ -32,6 +33,7 @@ export default function App() {
         <Stack.Screen name='Hortalizas' component={HortalizasScreen}/>
         <Stack.Screen name='Frutas' component={FrutasScreen} />
         <Stack.Screen name='Cereales' component={CerealesScreen} />
+        <Stack.Screen name='InfoPapaBruja' component={InfoPapaBrujaScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
