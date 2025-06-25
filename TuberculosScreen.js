@@ -18,6 +18,9 @@ export default function Tuberculos({ navigation }) {
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                 <Text style={styles.papas}>Papa Bruja</Text>
+                <Image
+                    source={require('./assets/papa_bruja.png')}
+                    style={styles.cultivos_iconos}/>
             </Pressable>
 
             <Pressable
@@ -29,7 +32,7 @@ export default function Tuberculos({ navigation }) {
             </Pressable>
             </View>
 
-            <View style={styles.botones_horizontal}>
+            <View style={styles.botones_horizontal_cultivos}>
             <Pressable
                 onPress={() => navigation.navigate('')}
                 style={({ pressed }) => [ 
