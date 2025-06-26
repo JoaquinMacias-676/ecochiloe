@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles';
 
 export default function SeleccionCultivo({ navigation }) {
@@ -16,7 +16,7 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Tuberculos')}
         style={({ pressed }) => [ 
-            styles.botones_principal,
+            styles.botones_tipo_cultivo,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }
         ]}>
         <Text style={styles.textocolor_botones}>Tubérculos</Text>
@@ -25,7 +25,7 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Hortalizas')}
         style={({ pressed }) => [ 
-            styles.botones_principal,
+            styles.botones_tipo_cultivo,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
         ]}>
         <Text style={styles.textocolor_botones}>Hortalizas</Text>
@@ -34,7 +34,7 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Frutas')}
         style={({ pressed }) => [ 
-            styles.botones_principal,
+            styles.botones_tipo_cultivo,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
         ]}>
         <Text style={styles.textocolor_botones}>Frutas</Text>
@@ -43,7 +43,7 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Cereales')}
         style={({ pressed }) => [ 
-            styles.botones_principal,
+            styles.botones_tipo_cultivo,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
         ]}>
         <Text style={styles.textocolor_botones}>Cereales</Text>
