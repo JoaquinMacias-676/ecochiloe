@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-// Estilo del fondo
+// Estilo del fondo verde
   container: {
     flex: 1,
     backgroundColor: '#00bf63',
@@ -29,6 +29,15 @@ export const styles = StyleSheet.create({
     textShadowRadius: 1,
   },
 
+// Estilo para el contador de cultivos en la pantalla principal
+  textocolor_contador: {
+    fontSize: 20,
+    color: 'white',
+    fontWeight: 'bold',
+    textShadowColor: 'black',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 1,
+  },  
 // Texto de Papas
   papas: {
     fontSize: 15,
@@ -42,6 +51,18 @@ export const styles = StyleSheet.create({
 
 // Estilo para los botones de la pantalla principal
   botones_principal: {
+    marginVertical: 16, 
+    width: 250,
+    height: 125, 
+    borderRadius: 16, 
+    borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#0c7744', 
+  },
+
+// Estilo para los botones de selección y busqueda de cultivos
+  botones_tipo_cultivo: {
     marginVertical: 10, 
     width: 288,
     height: 85, 
@@ -52,7 +73,17 @@ export const styles = StyleSheet.create({
     borderColor: '#0c7744', 
   },
 
-// Estilo para los botones de los tipos de cultivos
+// Estilo para el texto de los botones de la pantalla principal
+  textobotones_home: {
+    fontSize: 18,
+    color: 'white',
+    fontWeight: 'bold',
+    textShadowColor: 'black',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 1,
+  },
+
+// Estilo para los botones de los tipos de cultivos (botones que tienen iconos)
   botones_clasificacion_cultivos: {
     marginVertical: 10,
     marginHorizontal: 10, 
