@@ -36,19 +36,8 @@ El objetivo del análisis es identificar los contaminantes más importantes en d
 ## Estructura del Repositorio
 
 La estructura del proyecto es la siguiente:
-```
-global-air-pollution-analysis/
-├── assets/                       # Carpeta que contiene imágenes o activos para el README
-│   └── banner.png                # Imagen del banner utilizado en el README.md
-├── data/                         # Carpeta que contiene los datasets originales y limpios
-│   ├── global_air_pollution.csv  # Dataset original
-│   └── dataset_clean.csv         # Dataset limpio generado tras la limpieza de datos
-├── notebooks/                    # Notebooks de Jupyter con el análisis y transformación de datos
-│   ├── 01_Analisis_Exploratorio.ipynb     # Análisis exploratorio de los datos
-│   ├── 02_Limpieza_de_Datos.ipynb         # Limpieza de datos
-│   └── 03_Transformacion_de_Datos.ipynb   # Transformación de datos (Ingeniería de características, normalización, estandarización)
-├── README.md                     # Archivo de documentación del proyecto
-```
+
+
 
 
 ###  **Objetivos**
