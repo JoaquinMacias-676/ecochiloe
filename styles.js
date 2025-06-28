@@ -168,5 +168,5 @@ export const styles = StyleSheet.create({
     height: 275,
     resizeMode: 'contain',
 
-  }
+  },
 });
