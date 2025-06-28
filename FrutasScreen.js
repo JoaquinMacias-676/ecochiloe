@@ -59,5 +59,5 @@ export default function Frutas({ navigation }) {
             </Pressable>
             </View>  
         </View>
-      );
-    }
+    );
+}

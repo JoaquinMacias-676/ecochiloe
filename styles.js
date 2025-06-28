@@ -9,10 +9,27 @@ export const styles = StyleSheet.create({
     paddingTop: 150,
   },
 
+// Estilo del fondo blanco
+  container_blanco: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    paddingTop: 150,
+  },
+
+// Estulo para el texto de bienvenida
+  bienvenida_texto: {
+    marginVertical: -30,
+    fontSize: 20,
+    color: '#00000',
+    fontWeight: 'bold',
+  },
+
 // Estilo para el título  
   textocolor: {
     color: 'white',
     fontSize: 25,
+    fontFamily: 'Baloo2-ExtraBold',
     fontWeight: 'bold',
     textShadowColor: 'black',
     textShadowOffset: { width: -1, height: 1 },
@@ -49,6 +66,18 @@ export const styles = StyleSheet.create({
     textShadowRadius: 1,
   },
 
+// Estilo para los botones
+  botones_login: {
+    marginVertical: 180, 
+    width: 150,
+    height: 60, 
+    borderRadius: 16, 
+    borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#0c7744', 
+  },
+
 // Estilo para los botones de la pantalla principal
   botones_principal: {
     marginVertical: 16, 
@@ -73,7 +102,7 @@ export const styles = StyleSheet.create({
     borderColor: '#0c7744', 
   },
 
-// Estilo para el texto de los botones de la pantalla principal
+// Estilo para el texto de los botones de la pantalla principal y login
   textobotones_home: {
     fontSize: 18,
     color: 'white',
@@ -131,4 +160,13 @@ export const styles = StyleSheet.create({
     marginTop: 30,
     resizeMode: 'contain',
   },
+
+// Estilo Logo Login
+  logo_estilo: {
+    marginVertical: -50,
+    width: 275,
+    height: 275,
+    resizeMode: 'contain',
+
+  }
 });
