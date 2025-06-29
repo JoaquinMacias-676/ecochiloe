@@ -30,14 +30,14 @@ export default function InfoAjo({ navigation }) {
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Suelo suelto, bien drenado y con{"\n"} buena materia orgánica.{"\n"}
-          -Riego moderado, evitando el{"\n"} exceso de agua.{"\n"}
+          -Suelo suelto, bien drenado y con buena materia orgánica.{"\n"}
+          -Riego moderado, evitando el exceso de agua.{"\n"}
           -Mantener libre de malezas.
         </Text>
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Exceso de agua puede pudrir{"\n"} los bulbos.{"\n"}
+          -Exceso de agua puede{"\n"} pudrir los bulbos.{"\n"}
           -Enfermedades por hongos{"\n"} si el suelo está muy húmedo.{"\n"}
           -Algunas plagas como{"\n"} gusanos o trips.
         </Text>
@@ -48,7 +48,7 @@ export default function InfoAjo({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>Se cosecha a los 6-8 meses,{"\n"}cuando las hojas comienzan{"\n"} a secarse.</Text>
+        <Text style={styles.texto}>Se cosecha a los 6-8 meses, cuando las hojas comienzan a secarse.</Text>
       </View>
 
       <Pressable

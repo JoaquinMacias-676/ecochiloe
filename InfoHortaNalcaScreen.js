@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_nalca}>
         <Text style={styles.titulo}>Nalca</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -36,17 +36,17 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_nalca}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Exceso de agua puede pudrir la planta.{"\n"}
-          -Plagas como caracoles y babosas.
+          -Exceso de agua puede{"\n"} pudrir la planta.{"\n"}
+          -Plagas como caracoles{"\n"} y babosas.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>Se cosecha en 6-8 meses,{"\n"} cuando los tallos están gruesos y rojos.</Text>
+        <Text style={styles.texto}>Se cosecha en 6-8 meses,{"\n"}cuando los tallos están gruesos y rojos.</Text>
       </View>
 
       <Pressable

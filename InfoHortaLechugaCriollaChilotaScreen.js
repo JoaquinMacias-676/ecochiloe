@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_lechuga}>
         <Text style={styles.titulo}>Lechuga Criolla Chilota</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -36,17 +36,17 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_lechuga}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Exceso de agua puede pudrir las raíces.{"\n"}
-          -Plagas como pulgones y caracoles.
+          -Exceso de agua puede{"\n"} pudrir las raíces.{"\n"}
+          -Plagas como pulgones{"\n"} y caracoles.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>Se cosecha en 60-70 días,{"\n"} cuando las hojas están grandes.</Text>
+        <Text style={styles.texto}>Se cosecha en 60-70 días,{"\n"}cuando las hojas están grandes.</Text>
       </View>
 
       <Pressable
