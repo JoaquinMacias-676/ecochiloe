@@ -48,6 +48,28 @@ export const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
 
+// Cuadro de texto Papa Clavela Ojona
+  cuadro_de_texto_papa_clavela_ojona: {
+    width: 300,
+    height: 435,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#000000',
+    borderRadius: 10,
+    backgroundColor: '#ffffff',
+  },
+
+// Cuadro de texto Papa Clavela Ojona
+  cuadro_de_texto_papa_cacho_de_toro: {
+    width: 300,
+    height: 435,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#000000',
+    borderRadius: 10,
+    backgroundColor: '#ffffff',
+  },
+
 // Imagen Papa Bruja
   imagen_papa_bruja: {
     width: 100,
@@ -71,6 +93,31 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
   },
+
+// Imagen Papa Clavela Ojona
+  imagen_papa_clavela_ojona: {
+    width: 100,
+    height: 100,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 180,
+    left: 175,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Papa Cacho de Toro
+  imagen_papa_cacho_de_toro: {
+    width: 100,
+    height: 100,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 180,
+    left: 175,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
 // Estilo para botón "añadir"
   boton_añadir: {
     marginVertical: 180, 
