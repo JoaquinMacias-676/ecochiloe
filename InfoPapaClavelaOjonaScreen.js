@@ -38,7 +38,7 @@ export default function InfoPapaClavelaOjona({ navigation }) {
         </Text>
 
         <Image
-          source={{ uri: 'https://frutonchile.cl/wp-content/uploads/2019/12/papa-bruja.jpg' }}
+          source={{ uri: 'https://www.museodeancud.gob.cl/sites/www.museodeancud.gob.cl/files/2021-04/11%20FIG%2011%20_MG_2779.jpg' }}
           style={styles.imagen_papa_bruja}
         />
 
