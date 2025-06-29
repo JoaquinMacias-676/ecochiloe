@@ -16,16 +16,19 @@ export default function InfoLechuga({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>título</Text>
+        <Text style={styles.titulo}>Lanco</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>Por semillas, de forma directa.</Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>A fines de otoño o en invierno temprano.</Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Riego natural con lluvia.{"\n"}
+          -Se puede sembrar en suelos poco trabajados.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
@@ -33,10 +36,13 @@ export default function InfoLechuga({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Enfermedades por hongos si hay exceso de humedad.{"\n"}
+          -Ataques de pájaros en la época de grano.
+        </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En verano, cuando las espigas se secan.</Text>
       </View>
 
       <Pressable

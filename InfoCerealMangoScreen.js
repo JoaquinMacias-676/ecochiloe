@@ -16,16 +16,19 @@ export default function InfoLechuga({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>título</Text>
+        <Text style={styles.titulo}>Mango (cereal silvestre)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>Por semillas, en terreno arado.</Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En otoño.</Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Riego natural con lluvias.{"\n"}
+          -Se deja crecer libre, como cultivo de autoconsumo.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
@@ -33,10 +36,13 @@ export default function InfoLechuga({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Pocas, es muy rústico.{"\n"}
+          -Si hay heladas tardías puede afectar su desarrollo.
+        </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En verano, cuando las espigas están completamente secas.</Text>
       </View>
 
       <Pressable

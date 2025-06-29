@@ -16,16 +16,23 @@ export default function InfoLechuga({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>título</Text>
+        <Text style={styles.titulo}>Quinoa</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Por semillas, directamente en la tierra.{"\n"}
+          -Se hace un surco y se cubre ligeramente con tierra.
+        </Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En primavera, cuando ya no hay heladas.</Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Necesita sol directo y suelo bien drenado.{"\n"}
+          -No necesita mucho riego.{"\n"}
+          -Se desmaleza regularmente.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
@@ -33,10 +40,13 @@ export default function InfoLechuga({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Si hay exceso de agua, puede pudrirse.{"\n"}
+          -Algunas aves pueden comer las semillas.
+        </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>A los 4-5 meses, cuando las hojas se secan y las semillas están duras.</Text>
       </View>
 
       <Pressable
