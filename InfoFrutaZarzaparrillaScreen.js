@@ -1,10 +1,10 @@
 import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles_info';
 
-export default function InfoZarzaparrilla({ navigation }) {
+export default function InfoLechuga({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo_interfaz}>titulogrande</Text>
+      <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
 
       <Pressable
         onPress={() => navigation.navigate('Frutas')}
@@ -16,15 +16,15 @@ export default function InfoZarzaparrilla({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>titulo</Text>
+        <Text style={styles.titulo}>título</Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
+        <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
         <Text style={styles.texto}>texto</Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
+        <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
         <Text style={styles.texto}>texto</Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
+        <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>texto</Text>
 
         <Image
@@ -32,10 +32,10 @@ export default function InfoZarzaparrilla({ navigation }) {
           style={styles.imagen_papa_bruja}
         />
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
+        <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>texto</Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
+        <Text style={styles.subtitulo}>Cosecha</Text>
         <Text style={styles.texto}>texto</Text>
       </View>
 
