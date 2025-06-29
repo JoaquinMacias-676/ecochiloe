@@ -16,16 +16,22 @@ export default function InfoLechuga({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>título</Text>
+        <Text style={styles.titulo}>Zarzaparrilla</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Por estacas (trozos de tallo con nudos).{"\n"}
+          -Se planta en suelo húmedo y rico en nutrientes.
+        </Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En otoño o primavera.</Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Necesita sombra parcial y riego constante.{"\n"}
+          -Puede crecer como enredadera.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
@@ -33,10 +39,13 @@ export default function InfoLechuga({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Malezas cercanas pueden robarle nutrientes.{"\n"}
+          -Exceso de sol puede hacer que se sequé.
+        </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En verano, cuando da pequeñas bayas oscuras. (También se puede usar su raíz).</Text>
       </View>
 
       <Pressable

@@ -16,16 +16,22 @@ export default function InfoLechuga({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>título</Text>
+        <Text style={styles.titulo}>Chilco</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Por esquejes o brotes.{"\n"}
+          -Se planta en tierra húmeda, en zonas con sombra o sol suave.
+        </Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En otoño o principios de primavera.</Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Riego frecuente, pero sin encharcar.{"\n"}
+          -Podar si se pone muy grande.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
@@ -33,10 +39,13 @@ export default function InfoLechuga({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -No resiste sequías largas.{"\n"}
+          -Puede ser atacado por hongos si no hay buen aire.
+        </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>Da frutos en verano. Son morados, pequeños y comestibles.</Text>
       </View>
 
       <Pressable

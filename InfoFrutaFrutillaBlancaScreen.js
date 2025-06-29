@@ -16,16 +16,23 @@ export default function InfoLechuga({ navigation }) {
       </Pressable>
 
       <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>título</Text>
+        <Text style={styles.titulo}>Frutilla Blanca</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Se planta por estolones (ramitas que salen de la planta madre).{"\n"}
+          -Se entierra la parte con raíces en tierra suelta y húmeda.
+        </Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>En otoño o primavera.</Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Lugar con sol parcial.{"\n"}
+          -Suelo húmedo, sin encharcar.{"\n"}
+          -Sacar malezas que compitan con la planta.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
@@ -33,10 +40,13 @@ export default function InfoLechuga({ navigation }) {
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>
+          -Plagas como babosas o hongos si hay demasiada humedad.{"\n"}
+          -Frío extremo puede dañar brotes jóvenes.
+        </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.texto}>A los 3-4 meses, cuando el fruto{"\n"} está blanco con tono rosado y aromático.</Text>
       </View>
 
       <Pressable
