@@ -13,22 +13,22 @@ export default function Frutas({ navigation }) {
           </Pressable>
             <View style={styles.botones_horizontal_cultivos}>
             <Pressable
-                onPress={() => navigation.navigate('')}
+                onPress={() => navigation.navigate('InfoChilco')}
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>???</Text>
+                <Text style={styles.papas}>Chilco</Text>
                 <Image 
                     source={require('./assets/ecochiloe_logo.png')}
                     style={styles.cultivos_iconos} />
             </Pressable>
 
             <Pressable
-                onPress={() => navigation.navigate('')}
+                onPress={() => navigation.navigate('InfoFrutilla')}
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>???</Text>
+                <Text style={styles.papas}>Frutilla Blanca</Text>
                 <Image
                     source={require('./assets/ecochiloe_logo.png')}
                     style={styles.cultivos_iconos} />
@@ -37,22 +37,22 @@ export default function Frutas({ navigation }) {
 
             <View style={styles.botones_horizontal_cultivos}>
             <Pressable
-                onPress={() => navigation.navigate('')}
+                onPress={() => navigation.navigate('InfoMurta')}
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>???</Text>
+                <Text style={styles.papas}>Murta</Text>
                 <Image
                     source={require('./assets/ecochiloe_logo.png')}
                     style={styles.cultivos_iconos} />
             </Pressable>
 
             <Pressable
-                onPress={() => navigation.navigate('')}
+                onPress={() => navigation.navigate('InfoZarzaparrilla')}
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>???</Text>
+                <Text style={styles.papas}>Zarzaparrilla</Text>
                 <Image
                     source={require('./assets/ecochiloe_logo.png')} 
                     style={styles.cultivos_iconos} />
