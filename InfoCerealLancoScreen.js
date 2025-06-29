@@ -7,7 +7,7 @@ export default function InfoLanco({ navigation }) {
       <Text style={styles.titulo_interfaz}>titulogrande</Text>
 
       <Pressable
-        onPress={() => navigation.navigate('SeleccionCultivo')}
+        onPress={() => navigation.navigate('Cereales')}
         style={styles.flechaboton}>
         <Image
           source={require('./assets/flecha_atras.png')}

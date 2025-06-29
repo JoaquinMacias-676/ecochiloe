@@ -1,13 +1,13 @@
 import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles_info';
 
-export default function InfoFrutilla({ navigation }) {
+export default function InfoChilco({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>titulogrande</Text>
 
       <Pressable
-        onPress={() => navigation.navigate('SeleccionCultivo')}
+        onPress={() => navigation.navigate('Frutas')}
         style={styles.flechaboton}>
         <Image
           source={require('./assets/flecha_atras.png')}
