@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_murta}>
         <Text style={styles.titulo}>La Murta</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -30,14 +30,14 @@ export default function InfoLechuga({ navigation }) {
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Prefiere suelos ácidos y ligeramente húmedos.{"\n"}
-          -Riego moderado, evitando el encharcamiento.{"\n"}
-          -Necesita algo de sombra, pero también soporta el sol parcial.
+          -Prefiere suelos ácidos y{"\n"}ligeramente húmedos.{"\n"}
+          -Riego moderado, evitando{"\n"}el encharcamiento.{"\n"}
+          -Necesita algo de sombra,{"\n"}pero también soporta el{"\n"}sol parcial.
         </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_murta}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

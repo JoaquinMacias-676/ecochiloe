@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_chilco}>
         <Text style={styles.titulo}>Chilco</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -35,17 +35,17 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_chilco}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
           -No resiste sequías largas.{"\n"}
-          -Puede ser atacado por hongos si no hay buen aire.
+          -Puede ser atacado por{"\n"} hongos si no hay buen aire.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>Da frutos en verano. Son morados, pequeños y comestibles.</Text>
+        <Text style={styles.texto}>Da frutos en verano. Son{"\n"}morados, pequeños y{"\n"}comestibles.</Text>
       </View>
 
       <Pressable
