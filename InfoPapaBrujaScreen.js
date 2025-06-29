@@ -7,7 +7,7 @@ export default function InfoPapaBruja({ navigation }) {
 
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
         <Pressable
-          onPress={() => navigation.navigate('SeleccionCultivo')}
+          onPress={() => navigation.navigate('Tuberculos')}
           style={styles.flechaboton}>
           <Image
               source={require('./assets/flecha_atras.png')}
