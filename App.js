@@ -7,34 +7,34 @@ import LoginScreen from './LoginScreen';
 import HomeScreen from './HomeScreen';
 import SelectCultivoScreen from './SelectCultivoScreen';
 import BusCultivosScreen from './BusCultivosScreen';
-import TuberculosScreen from './TuberculosScreen';
-import HortalizasScreen from './HortalizasScreen';
-import FrutasScreen from './FrutasScreen';
-import CerealesScreen from './CerealesScreen';
+import TuberculosScreen from './TCTuberculosScreen';
+import HortalizasScreen from './TCHortalizasScreen';
+import FrutasScreen from './TCFrutasScreen';
+import CerealesScreen from './TCCerealesScreen';
 
 // Importando interfaces de Cereales
-import InfoCerealHuequenScreen from './InfoCerealHuequenScreen';
-import InfoCerealLancoScreen from './InfoCerealLancoScreen';
-import InfoCerealMangoScreen from './InfoCerealMangoScreen';
-import InfoCerealQuinoaScreen from './InfoCerealQuinoaScreen';
+import InfoHuequen from './InfoCerealHuequenScreen';
+import InfoLanco from './InfoCerealLancoScreen';
+import InfoMango from './InfoCerealMangoScreen';
+import InfoQuinoa from './InfoCerealQuinoaScreen';
 
 // Importando interfaces de Frutas
-import InfoFrutaChilcoScreen from './InfoFrutaChilcoScreen';
-import InfoFrutaFrutillaBlancaScreen from './InfoFrutaFrutillaBlancaScreen';
-import InfoFrutaMurtaScreen from './InfoFrutaMurtaScreen';
-import InfoFrutaZarzaparrillaScreen from './InfoFrutaZarzaparrillaScreen' 
+import InfoChilco from './InfoFrutaChilcoScreen';
+import InfoFrutilla from './InfoFrutaFrutillaBlancaScreen';
+import InfoMurta from './InfoFrutaMurtaScreen';
+import InfoZarzaparrilla from './InfoFrutaZarzaparrillaScreen' 
 
 // Importando interfaces de Hortalizas
-import InfoHortaAjoChiloteScreen from './InfoHortaAjoChiloteScreen';
-import InfoHortaLechugaCriollaChilotaScreen from './InfoHortaLechugaCriollaChilotaScreen';
-import InfoHortaMaquiScreen from './InfoHortaMaquiScreen';
-import InfoHortaNalcaScreen from './InfoHortaNalcaScreen';
+import InfoAjo from './InfoHortaAjoChiloteScreen';
+import InfoLechuga from './InfoHortaLechugaCriollaChilotaScreen';
+import InfoMaqui from './InfoHortaMaquiScreen';
+import InfoNalca from './InfoHortaNalcaScreen';
 
 // Importando interfaces de Tubérculos
-import InfoPapaBrujaScreen from './InfoPapaBrujaScreen';
-import InfoPapaCachoDeToroScreen from './InfoPapaCachoDeToroScreen';
-import InfoPapaClavelaOjonaScreen from './InfoPapaClavelaOjonaScreen'
-import InfoPapaRojaScreen from './InfoPapaRojaScreen';
+import InfoPapaBruja from './InfoPapaBrujaScreen';
+import InfoPapaCachoDeToro from './InfoPapaCachoDeToroScreen';
+import InfoPapaClavelaOjona from './InfoPapaClavelaOjonaScreen'
+import InfoPapaRoja from './InfoPapaRojaScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,22 +51,22 @@ export default function App() {
         <Stack.Screen name='Hortalizas' component={HortalizasScreen}/>
         <Stack.Screen name='Frutas' component={FrutasScreen} />
         <Stack.Screen name='Cereales' component={CerealesScreen} />
-        <Stack.Screen name='InfoHuequen' component={InfoCerealHuequenScreen} />
-        <Stack.Screen name='InfoLanco' component={InfoCerealLancoScreen} />
-        <Stack.Screen name='InfoMango' component={InfoCerealMangoScreen} />
-        <Stack.Screen name='InfoQuinoa' component={InfoCerealQuinoaScreen} />
-        <Stack.Screen name='InfoChilco' component={InfoFrutaChilcoScreen} />
-        <Stack.Screen name='InfoFrutilla' component={InfoFrutaFrutillaBlancaScreen} />
-        <Stack.Screen name='InfoMurta' component={InfoFrutaMurtaScreen} />
-        <Stack.Screen name='InfoZarzaparrilla' component={InfoFrutaZarzaparrillaScreen} />
-        <Stack.Screen name='InfoAjo' component={InfoHortaAjoChiloteScreen} />
-        <Stack.Screen name='InfoLechuga' component={InfoHortaLechugaCriollaChilotaScreen} />
-        <Stack.Screen name='InfoMaqui' component={InfoHortaMaquiScreen} />
-        <Stack.Screen name='InfoNalca' component={InfoHortaNalcaScreen} />
-        <Stack.Screen name='InfoPapaBruja' component={InfoPapaBrujaScreen} />
-        <Stack.Screen name='InfoPapaCachoDeToro' component={InfoPapaCachoDeToroScreen} />
-        <Stack.Screen name='InfoPapaClavelaOjona' component={InfoPapaClavelaOjonaScreen} />
-        <Stack.Screen name='InfoPapaRoja' component={InfoPapaRojaScreen} />
+        <Stack.Screen name='InfoHuequen' component={InfoHuequen} />
+        <Stack.Screen name='InfoLanco' component={InfoLanco} />
+        <Stack.Screen name='InfoMango' component={InfoMango} />
+        <Stack.Screen name='InfoQuinoa' component={InfoQuinoa} />
+        <Stack.Screen name='InfoChilco' component={InfoChilco} />
+        <Stack.Screen name='InfoFrutilla' component={InfoFrutilla} />
+        <Stack.Screen name='InfoMurta' component={InfoMurta} />
+        <Stack.Screen name='InfoZarzaparrilla' component={InfoZarzaparrilla} />
+        <Stack.Screen name='InfoAjo' component={InfoAjo} />
+        <Stack.Screen name='InfoLechuga' component={InfoLechuga} />
+        <Stack.Screen name='InfoMaqui' component={InfoMaqui} />
+        <Stack.Screen name='InfoNalca' component={InfoNalca} />
+        <Stack.Screen name='InfoPapaBruja' component={InfoPapaBruja} />
+        <Stack.Screen name='InfoPapaCachoDeToro' component={InfoPapaCachoDeToro} />
+        <Stack.Screen name='InfoPapaClavelaOjona' component={InfoPapaClavelaOjona} />
+        <Stack.Screen name='InfoPapaRoja' component={InfoPapaRoja} />
       </Stack.Navigator>
     </NavigationContainer>
   );
