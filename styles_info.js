@@ -103,5 +103,7 @@ export const styles = StyleSheet.create({
   texto_boton_añadir: {
     color: 'white',
     fontSize: 15,
+    textShadowColor: 'black',
+    textShadowRadius: 5,
   },
 });
