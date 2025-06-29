@@ -17,6 +17,16 @@ export const styles = StyleSheet.create({
     paddingTop: 150,
   },
 
+// Estilo para el título que describe la pantalla
+  titulo_interfaz: {
+    fontSize: 30,
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    position: 'absolute',
+    top: 73,
+  },
+
 // Estulo para el texto de bienvenida
   bienvenida_texto: {
     marginVertical: -30,

@@ -26,6 +26,18 @@ export const styles = StyleSheet.create({
     color: '#000000',
   },
 
+// Estilo para el título que describe la pantalla
+  titulo_interfaz: {
+    fontSize: 30,
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    position: 'absolute',
+    top: 73,
+    shadowRadius: 2,
+    shadowColor: 'black',
+  },
+
   // Cuadro de texto
   cuadro_de_texto: {
     width: 300,
@@ -73,5 +85,23 @@ export const styles = StyleSheet.create({
     left: 175,
     borderWidth: 1,
     borderColor: 'black',
+  },
+
+// Estilo para botón "añadir"
+  boton_añadir: {
+    marginVertical: 180, 
+    width: 150,
+    height: 60, 
+    borderRadius: 16, 
+    borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#0c7744', 
+  },
+
+// Texto color botón "añadir"
+  texto_boton_añadir: {
+    color: 'white',
+    fontSize: 15,
   },
 });
