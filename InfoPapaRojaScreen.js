@@ -1,7 +1,7 @@
 import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles_info';
 
-export default function InfoPapaBruja({ navigation }) {
+export default function InfoPapaRoja({ navigation }) {
   return (
     <View style={styles.container}>
 
@@ -16,33 +16,33 @@ export default function InfoPapaBruja({ navigation }) {
 
       <View style={styles.cuadro_de_texto}>
 
-        <Text style={styles.titulo}>PAPA BRUJA</Text>
+        <Text style={styles.titulo}>PAPA ROJA</Text>
           
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>Se corta la papa en pedazos con brotes (ojos) y se entierran en la tierra, a unos 10 cm de profundidad.</Text>
+        <Text style={styles.texto}>Se corta en trozos con al menos un “ojo” (brote) y se entierra en la tierra a unos 10–15 cm de profundidad.</Text>
           
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
-        <Text style={styles.texto}>Entre Agosto y Octubre, cuando empieza la primavera en Chiloé.</Text>
+        <Text style={styles.texto}>Entre agosto y octubre, aprovechando la primavera chilota.</Text>
           
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Usar tierra suelta y con{"\n"} abono.{"\n"}
-          -Regar con poca agua,{"\n"} sin encharcar.{"\n"}
-          -Echar tierra al tallo{"\n"} cuando crezca.
+          -Tierra suelta, con buen abono natural.{"\n"}
+          -Riego moderado, evitando que el{"\n"} suelo quede muy mojado.{"\n"}
+          -Ir echando tierra al tallo a medida{"\n"} que crece.
         </Text>
 
         <Image
-          source={{ uri: 'https://frutonchile.cl/wp-content/uploads/2019/12/papa-bruja.jpg'}}
+          source={{ uri: 'https://tienda.frutaseloy.com/wp-content/uploads/2024/11/variedad-de-patata-roja-425x495.png.webp'}}
           style={styles.imagen_papa_bruja}/>
           
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Mucha agua puede pudrir la papa.{"\n"}
-          -Pueden aparecer gusanos o bichos que dañen el cultivo.
+          -Exceso de agua puede hacer que se pudran.{"\n"}
+          -Plagas como gusanos blancos o pulgones pueden afectarla.
         </Text>
           
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>Se cosecha después de 3 a 4 meses, cuando se comienza a secar.</Text>
+        <Text style={styles.texto}>Se cosecha a los 3 o 4 meses, cuando la planta se seca en la parte de arriba.</Text>
       </View>
 
       <Pressable
