@@ -11,7 +11,18 @@ import TuberculosScreen from './TuberculosScreen';
 import HortalizasScreen from './HortalizasScreen';
 import FrutasScreen from './FrutasScreen';
 import CerealesScreen from './CerealesScreen';
+
+// Importando interfaces de Hortalizas
+import InfoAjoChiloteScreen from './InfoAjoChiloteScreen';
+import InfoLechugaCriollaChilotaScreen from './InfoLechugaCriollaChilotaScreen';
+import InfoMaquiScreen from './InfoMaquiScreen';
+import InfoNalcaScreen from './InfoNalcaScreen';
+
+// Importando interfaces de Tubérculos
 import InfoPapaBrujaScreen from './InfoPapaBrujaScreen';
+import InfoPapaCachoDeToroScreen from './InfoPapaCachoDeToroScreen';
+import InfoPapaClavelaOjonaScreen from './InfoPapaClavelaOjonaScreen'
+import InfoPapaRojaScreen from './InfoPapaRojaScreen';
 
 const Stack = createNativeStackNavigator();
 
