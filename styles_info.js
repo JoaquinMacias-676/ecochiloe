@@ -26,6 +26,71 @@ export const styles = StyleSheet.create({
     color: '#000000',
   },
 
+// Cuadro de texto Papa Bruja
+  cuadro_de_texto_papa_bruja: {
+    width: 300,
+    height: 450,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#000000',
+    borderRadius: 10,
+    backgroundColor: '#ffffff',
+  },
+
+// Cuadro de texto Papa Roja
+  cuadro_de_texto_papa_roja: {
+    width: 300,
+    height: 475,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#000000',
+    borderRadius: 10,
+    backgroundColor: '#ffffff',
+  },
+
+// Imagen Papa Bruja
+  imagen_papa_bruja: {
+    width: 100,
+    height: 100,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 185,
+    left: 175,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Papa Roja
+  imagen_papa_roja: {
+    width: 100,
+    height: 100,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 210,
+    left: 175,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+// Estilo para botón "añadir"
+  boton_añadir: {
+    marginVertical: 180, 
+    width: 150,
+    height: 60, 
+    borderRadius: 16, 
+    borderWidth: 2,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#0c7744', 
+  },
+
+// Texto color botón "añadir"
+  texto_boton_añadir: {
+    color: 'white',
+    fontSize: 15,
+    textShadowColor: 'black',
+    textShadowRadius: 5,
+  },
+
 // Estilo para el título que describe la pantalla
   titulo_interfaz: {
     fontSize: 30,
@@ -37,18 +102,6 @@ export const styles = StyleSheet.create({
     shadowRadius: 2,
     shadowColor: 'black',
   },
-
-  // Cuadro de texto
-  cuadro_de_texto: {
-    width: 300,
-    height: 450,
-    padding: 10,
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 10,
-    backgroundColor: '#ffffff',
-  },
-
 // Título
   titulo: {
     fontSize: 22,
@@ -73,37 +126,5 @@ export const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'left',
     marginBottom: 10,
-  },
-
-// Imagen Papa Bruja
-  imagen_papa_bruja: {
-    width: 100,
-    height: 100,
-    borderRadius: 8,
-    position: 'absolute',
-    top: 185,
-    left: 175,
-    borderWidth: 1,
-    borderColor: 'black',
-  },
-
-// Estilo para botón "añadir"
-  boton_añadir: {
-    marginVertical: 180, 
-    width: 150,
-    height: 60, 
-    borderRadius: 16, 
-    borderWidth: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderColor: '#0c7744', 
-  },
-
-// Texto color botón "añadir"
-  texto_boton_añadir: {
-    color: 'white',
-    fontSize: 15,
-    textShadowColor: 'black',
-    textShadowRadius: 5,
   },
 });
