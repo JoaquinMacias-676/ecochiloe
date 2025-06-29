@@ -4,6 +4,9 @@ import { styles } from './styles';
 export default function SeleccionCultivo({ navigation }) {
   return (
     <View style={styles.container}>
+      
+      <Text style={styles.titulo_interfaz}>TIPO DE CULTIVOS</Text>
+
       <Pressable
         onPress={() => navigation.navigate('Home')}
         style={styles.flechaboton}>
