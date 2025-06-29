@@ -18,6 +18,13 @@ export default function InfoAjo({ navigation }) {
       <View style={styles.cuadro_de_texto_ajo}>
         <Text style={styles.titulo}>AJO CHILOTE</Text>
 
+        <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
+        <Text style={styles.texto}>
+          -Se planta el diente de ajo (no la cabeza entera).{"\n"}
+          -Se entierra con la punta hacia arriba, a unos 3-5 cm de profundidad.{"\n"}
+          -Dejar 10-15 cm de distancia entre cada planta.
+        </Text>
+
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
         <Text style={styles.texto}>En otoño, entre abril y junio.</Text>
 
