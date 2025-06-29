@@ -70,6 +70,17 @@ export const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
 
+// Cuadro de texto Ajo Chilote
+  cuadro_de_texto_ajo: {
+    width: 300,
+    height: 420,
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#000000',
+    borderRadius: 10,
+    backgroundColor: '#ffffff',
+  },
+
 // Imagen Papa Bruja
   imagen_papa_bruja: {
     width: 100,
@@ -113,6 +124,18 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     position: 'absolute',
     top: 180,
+    left: 175,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Papa Cacho de Toro
+  imagen_ajo: {
+    width: 100,
+    height: 100,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 270,
     left: 175,
     borderWidth: 1,
     borderColor: 'black',
