@@ -4,7 +4,7 @@ import { styles } from './styles_info';
 export default function InfoAjo({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo_interfaz}>titulogrande</Text>
+      <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
 
       <Pressable
         onPress={() => navigation.navigate('Hortalizas')}
@@ -15,28 +15,33 @@ export default function InfoAjo({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
-        <Text style={styles.titulo}>titulo</Text>
+      <View style={styles.cuadro_de_texto_ajo}>
+        <Text style={styles.titulo}>AJO CHILOTE</Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
+        <Text style={styles.texto}>En otoño, entre abril y junio.</Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.subtitulo}>Cuidados básicos</Text>
+        <Text style={styles.texto}>
+          -Suelo suelto, bien drenado y con{"\n"} buena materia orgánica.{"\n"}
+          -Riego moderado, evitando el{"\n"} exceso de agua.{"\n"}
+          -Mantener libre de malezas.
+        </Text>
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
+        <Text style={styles.texto}>
+          -Exceso de agua puede pudrir{"\n"} los bulbos.{"\n"}
+          -Enfermedades por hongos{"\n"} si el suelo está muy húmedo.{"\n"}
+          -Algunas plagas como{"\n"} gusanos o trips.
+        </Text>
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_ajo}
         />
 
-        <Text style={styles.subtitulo}>subtitulo</Text>
-        <Text style={styles.texto}>texto</Text>
-
-        <Text style={styles.subtitulo}>subtitulo</Text>
-        <Text style={styles.texto}>texto</Text>
+        <Text style={styles.subtitulo}>Cosecha</Text>
+        <Text style={styles.texto}>Se cosecha a los 6-8 meses,{"\n"}cuando las hojas comienzan{"\n"} a secarse.</Text>
       </View>
 
       <Pressable
