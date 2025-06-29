@@ -15,7 +15,7 @@ export default function InfoPapaCachoDeToro({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_papa_cacho_de_toro}>
         <Text style={styles.titulo}>PAPA CACHO DE TORO</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -40,7 +40,7 @@ export default function InfoPapaCachoDeToro({ navigation }) {
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_papa_cacho_de_toro}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

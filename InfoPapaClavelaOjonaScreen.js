@@ -34,18 +34,18 @@ export default function InfoPapaClavelaOjona({ navigation }) {
         <Text style={styles.texto}>
           -Tierra suelta y abonada.{"\n"}
           -Riego moderado.{"\n"}
-          -Limpiar malezas y echarle{"\n"} tierra en la base cuando{"\n"} vaya creciendo.
+          -Limpiar malezas y{"\n"} echarle tierra en la base{"\n"} cuando vaya creciendo.
         </Text>
 
         <Image
           source={{ uri: 'https://www.museodeancud.gob.cl/sites/www.museodeancud.gob.cl/files/2021-04/11%20FIG%2011%20_MG_2779.jpg' }}
-          style={styles.imagen_papa_bruja}
+          style={styles.imagen_papa_clavela_ojona}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
           -Exceso de agua puede pudrir.{"\n"}
-          -Plagas como gusanos, pulgones y escarabajos.
+          -Plagas como gusanos, pulgones{"\n"} y escarabajos.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
