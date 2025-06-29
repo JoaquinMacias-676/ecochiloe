@@ -14,7 +14,7 @@ export default function InfoPapaRoja({ navigation }) {
               style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
         </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_papa_roja}>
 
         <Text style={styles.titulo}>PAPA ROJA</Text>
           
@@ -26,14 +26,14 @@ export default function InfoPapaRoja({ navigation }) {
           
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Tierra suelta, con buen abono natural.{"\n"}
-          -Riego moderado, evitando que el{"\n"} suelo quede muy mojado.{"\n"}
-          -Ir echando tierra al tallo a medida{"\n"} que crece.
+          -Tierra suelta, con buen{"\n"} abono natural.{"\n"}
+          -Riego moderado, evitando{"\n"} que el suelo quede muy{"\n"} mojado.{"\n"}
+          -Ir echando tierra al tallo{"\n"} a medida que crece.
         </Text>
 
         <Image
           source={{ uri: 'https://tienda.frutaseloy.com/wp-content/uploads/2024/11/variedad-de-patata-roja-425x495.png.webp'}}
-          style={styles.imagen_papa_bruja}/>
+          style={styles.imagen_papa_roja}/>
           
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
