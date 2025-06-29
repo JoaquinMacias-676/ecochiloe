@@ -10,13 +10,13 @@ import BusCultivosScreen from './BusCultivosScreen';
 import TuberculosScreen from './TCTuberculosScreen';
 import HortalizasScreen from './TCHortalizasScreen';
 import FrutasScreen from './TCFrutasScreen';
-import CerealesScreen from './TCCerealesScreen';
+import MedicinalesScreen from './TCMedicinalesScreen';
 
-// Importando interfaces de Cereales
-import InfoHuequen from './InfoCerealHuequenScreen';
-import InfoLanco from './InfoCerealLancoScreen';
-import InfoMango from './InfoCerealMangoScreen';
-import InfoQuinoa from './InfoCerealQuinoaScreen';
+// Importando interfaces de Cultivos Medicinales
+import InfoArrayan from './InfoMedArrayanScreen';
+import InfoCanelo from './InfoMedCaneloScreen';
+import InfoMatico from './InfoMedMaticoScreen';
+import InfoMichay from './InfoMedMichayScreen';
 
 // Importando interfaces de Frutas
 import InfoChilco from './InfoFrutaChilcoScreen';
@@ -50,11 +50,11 @@ export default function App() {
         <Stack.Screen name="Tuberculos" component={TuberculosScreen} />
         <Stack.Screen name='Hortalizas' component={HortalizasScreen}/>
         <Stack.Screen name='Frutas' component={FrutasScreen} />
-        <Stack.Screen name='Cereales' component={CerealesScreen} />
-        <Stack.Screen name='InfoHuequen' component={InfoHuequen} />
-        <Stack.Screen name='InfoLanco' component={InfoLanco} />
-        <Stack.Screen name='InfoMango' component={InfoMango} />
-        <Stack.Screen name='InfoQuinoa' component={InfoQuinoa} />
+        <Stack.Screen name='Medicinales' component={MedicinalesScreen} />
+        <Stack.Screen name='InfoArrayan' component={InfoArrayan} />
+        <Stack.Screen name='InfoCanelo' component={InfoCanelo} />
+        <Stack.Screen name='InfoMatico' component={InfoMatico} />
+        <Stack.Screen name='InfoMichay' component={InfoMichay} />
         <Stack.Screen name='InfoChilco' component={InfoChilco} />
         <Stack.Screen name='InfoFrutilla' component={InfoFrutilla} />
         <Stack.Screen name='InfoMurta' component={InfoMurta} />
