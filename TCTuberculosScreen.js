@@ -10,9 +10,9 @@ export default function Tuberculos({ navigation }) {
             <Pressable
                 onPress={() => navigation.navigate('SeleccionCultivo')}
                 style={styles.flechaboton}>
-            <Image
-                source={require('./assets/flecha_atras.png')}
-                style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
+                <Image
+                    source={require('./assets/flecha_atras.png')}
+                    style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
             </Pressable>
 
             <View style={styles.botones_horizontal_cultivos}>
