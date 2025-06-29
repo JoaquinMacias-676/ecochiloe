@@ -5,7 +5,7 @@ export default function Cereales({ navigation }) {
     return (
         <View style={styles.container}>
           
-            <Text style={styles.titulo_interfaz}>CEREALES</Text>
+            <Text style={styles.titulo_interfaz}>MEDICINALES</Text>
 
             <Pressable
                 onPress={() => navigation.navigate('SeleccionCultivo')}
@@ -17,22 +17,22 @@ export default function Cereales({ navigation }) {
 
             <View style={styles.botones_horizontal_cultivos}>
                 <Pressable
-                    onPress={() => navigation.navigate('InfoHuequen')}
+                    onPress={() => navigation.navigate('InfoArrayan')}
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Huequén</Text>
+                    <Text style={styles.papas}>Arrayan</Text>
                     <Image 
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
                 </Pressable>
 
                 <Pressable
-                    onPress={() => navigation.navigate('InfoLanco')}
+                    onPress={() => navigation.navigate('InfoCanelo')}
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Lanco</Text>
+                    <Text style={styles.papas}>Canelo</Text>
                     <Image
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
@@ -41,22 +41,22 @@ export default function Cereales({ navigation }) {
 
             <View style={styles.botones_horizontal_cultivos}>
                 <Pressable
-                    onPress={() => navigation.navigate('InfoMango')}
+                    onPress={() => navigation.navigate('InfoMatico')}
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Mango</Text>
+                    <Text style={styles.papas}>Matico</Text>
                     <Image
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
                 </Pressable>
 
                 <Pressable
-                    onPress={() => navigation.navigate('InfoQuinoa')}
+                    onPress={() => navigation.navigate('InfoMichay')}
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Quinoa</Text>
+                    <Text style={styles.papas}>Michay</Text>
                     <Image
                         source={require('./assets/ecochiloe_logo.png')} 
                         style={styles.cultivos_iconos} />
