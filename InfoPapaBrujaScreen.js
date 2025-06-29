@@ -14,7 +14,7 @@ export default function InfoPapaBruja({ navigation }) {
               style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
         </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_papa_bruja}>
 
         <Text style={styles.titulo}>PAPA BRUJA</Text>
           

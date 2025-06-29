@@ -15,7 +15,7 @@ export default function InfoPapaClavelaOjona({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={styles.cuadro_de_texto_papa_clavela_ojona}>
         <Text style={styles.titulo}>PAPA CLAVELA OJONA</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -34,7 +34,7 @@ export default function InfoPapaClavelaOjona({ navigation }) {
         <Text style={styles.texto}>
           -Tierra suelta y abonada.{"\n"}
           -Riego moderado.{"\n"}
-          -Limpiar malezas y echarle tierra en{"\n"} la base cuando vaya creciendo.
+          -Limpiar malezas y echarle{"\n"} tierra en la base cuando{"\n"} vaya creciendo.
         </Text>
 
         <Image
