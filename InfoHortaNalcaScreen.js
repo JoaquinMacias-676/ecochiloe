@@ -7,7 +7,7 @@ export default function InfoNalca({ navigation }) {
       <Text style={styles.titulo_interfaz}>titulogrande</Text>
 
       <Pressable
-        onPress={() => navigation.navigate('SeleccionCultivo')}
+        onPress={() => navigation.navigate('Hortalizas')}
         style={styles.flechaboton}>
         <Image
           source={require('./assets/flecha_atras.png')}
