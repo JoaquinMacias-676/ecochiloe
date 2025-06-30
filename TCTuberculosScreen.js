@@ -35,8 +35,8 @@ export default function Tuberculos({ navigation }) {
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                 <Text style={styles.papas}>Papa Roja</Text>
                 <Image
-                    source={require('./assets/papa_pukara.png')}
-                    style={styles.cultivos_iconos_papa_pukara} />
+                    source={require('./assets/papa_roja.png')}
+                    style={styles.cultivos_iconos} />
             </Pressable>
             </View>
 
@@ -48,7 +48,7 @@ export default function Tuberculos({ navigation }) {
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.papas}>Papa Clavela Ojona</Text>
                     <Image
-                        source={require('./assets/papa_murta_ojuda.png')}
+                        source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
                 </Pressable>
 

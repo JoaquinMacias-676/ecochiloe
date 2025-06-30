@@ -21,7 +21,7 @@ export default function Cereales({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Arrayan</Text>
+                    <Text style={styles.papas}>Arrayán</Text>
                     <Image 
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
