@@ -37,7 +37,7 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://www.chileestuyo.cl/wp-content/uploads/2021/04/Murta.jpg' }}
-          style={styles.imagen_murta}
+          style={[styles.imagen, { top: 230, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
