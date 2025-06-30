@@ -26,54 +26,10 @@ export const styles = StyleSheet.create({
     color: '#000000',
   },
 
-// Cuadro de texto Papa Bruja
-  cuadro_de_texto_papa_bruja: {
+// Cuadro de texto
+  cuadro_de_texto: {
     width: 300,
     height: 450,
-    padding: 10,
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 10,
-    backgroundColor: '#ffffff',
-  },
-
-// Cuadro de texto Papa Roja
-  cuadro_de_texto_papa_roja: {
-    width: 300,
-    height: 475,
-    padding: 10,
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 10,
-    backgroundColor: '#ffffff',
-  },
-
-// Cuadro de texto Papa Clavela Ojona
-  cuadro_de_texto_papa_clavela_ojona: {
-    width: 300,
-    height: 435,
-    padding: 10,
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 10,
-    backgroundColor: '#ffffff',
-  },
-
-// Cuadro de texto Papa Clavela Ojona
-  cuadro_de_texto_papa_cacho_de_toro: {
-    width: 300,
-    height: 435,
-    padding: 10,
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 10,
-    backgroundColor: '#ffffff',
-  },
-
-// Cuadro de texto Ajo Chilote
-  cuadro_de_texto_ajo: {
-    width: 300,
-    height: 420,
     padding: 10,
     borderWidth: 2,
     borderColor: '#000000',
@@ -129,14 +85,98 @@ export const styles = StyleSheet.create({
     borderColor: 'black',
   },
 
-// Imagen Papa Cacho de Toro
+// Imagen Ajo
   imagen_ajo: {
-    width: 100,
-    height: 100,
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 310,
+    left: 185,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Lechuga
+  imagen_lechuga: {
+    width: 90,
+    height: 90,
     borderRadius: 8,
     position: 'absolute',
     top: 270,
-    left: 175,
+    left: 180,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Maqui
+  imagen_maqui: {
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 295,
+    left: 180,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Nalca
+  imagen_nalca: {
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 285,
+    left: 180,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Chilco
+  imagen_chilco: {
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 280,
+    left: 180,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Frutilla
+  imagen_frutilla: {
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 170,
+    left: 190,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Murta
+  imagen_murta: {
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 230,
+    left: 180,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+
+// Imagen Zarzaparrilla
+  imagen_zarzaparrilla: {
+    width: 90,
+    height: 90,
+    borderRadius: 8,
+    position: 'absolute',
+    top: 255,
+    left: 180,
     borderWidth: 1,
     borderColor: 'black',
   },
