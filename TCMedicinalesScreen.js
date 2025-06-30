@@ -21,7 +21,7 @@ export default function Cereales({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Arrayán</Text>
+                    <Text style={styles.icono_texto}>Arrayán</Text>
                     <Image 
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
@@ -32,7 +32,7 @@ export default function Cereales({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Canelo</Text>
+                    <Text style={styles.icono_texto}>Canelo</Text>
                     <Image
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
@@ -45,7 +45,7 @@ export default function Cereales({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Matico</Text>
+                    <Text style={styles.icono_texto}>Matico</Text>
                     <Image
                         source={require('./assets/ecochiloe_logo.png')}
                         style={styles.cultivos_iconos} />
@@ -56,7 +56,7 @@ export default function Cereales({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Michay</Text>
+                    <Text style={styles.icono_texto}>Michay</Text>
                     <Image
                         source={require('./assets/ecochiloe_logo.png')} 
                         style={styles.cultivos_iconos} />

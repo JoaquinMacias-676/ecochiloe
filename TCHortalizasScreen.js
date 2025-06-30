@@ -21,10 +21,10 @@ export default function Tuberculos({ navigation }) {
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>Ajo Chilote</Text>
+                <Text style={styles.icono_texto}>Ajo Chilote</Text>
                 <Image 
-                    source={require('./assets/ecochiloe_logo.png')}
-                    style={styles.cultivos_iconos}
+                    source={require('./assets/ajo_chilote.png')}
+                    style={[styles.cultivos_iconos, { width: 150, height: 150, top: -20 }]}
                 />
             </Pressable>
 
@@ -33,10 +33,10 @@ export default function Tuberculos({ navigation }) {
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>Lechuga Criolla Chilota</Text>
+                <Text style={styles.icono_texto}>Lechuga Criolla Chilota</Text>
                 <Image
-                    source={require('./assets/ecochiloe_logo.png')}
-                    style={styles.cultivos_iconos} />
+                    source={require('./assets/lechuga.png')}
+                    style={[styles.cultivos_iconos, { width: 110, height: 110, top: -10 }]} />
             </Pressable>
             </View>
 
@@ -46,9 +46,9 @@ export default function Tuberculos({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Maqui</Text>
+                    <Text style={styles.icono_texto}>Maqui</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')}
+                        source={require('./assets/maqui.png')}
                         style={styles.cultivos_iconos} />
                 </Pressable>
 
@@ -57,9 +57,9 @@ export default function Tuberculos({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Nalca</Text>
+                    <Text style={styles.icono_texto}>Nalca</Text>
                 <Image
-                    source={require('./assets/ecochiloe_logo.png')} 
+                    source={require('./assets/nalca.png')} 
                     style={styles.cultivos_iconos} />
             </Pressable>
             </View>  
