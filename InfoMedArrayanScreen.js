@@ -15,7 +15,7 @@ export default function InfoArrayan({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={[styles.cuadro_de_texto, { height: 460 }]}>
         <Text style={styles.titulo}>Arrayán (Luma apiculata)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -31,13 +31,13 @@ export default function InfoArrayan({ navigation }) {
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Riego frecuente y buena ventilación.{"\n"}
-          -Crece lento pero es muy resistente.
+          -Riego frecuente y buena{"\n"}ventilación.{"\n"}
+          -Crece lento pero es muy{"\n"}resistente.
         </Text>
 
         <Image
           source={{ uri: 'https://www.cincopinos.cl/cdn/shop/products/10a_24pTyd1nnvPQ0vLTQOW7Qil99UaNJ_5000x.jpg?v=1625150582' }}
-          style={styles.imagen_papa_bruja}
+          style={[styles.imagen, { top: 165, left: 180}]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
@@ -52,7 +52,7 @@ export default function InfoArrayan({ navigation }) {
 
         <Text style={styles.subtitulo}>¿Para qué sirve?</Text>
         <Text style={styles.texto}>
-          Ayuda en infecciones de garganta, diarreas{"\n"} y tiene efecto antiséptico.
+          Ayuda en infecciones de garganta, diarreas{"\n"}y tiene efecto antiséptico.
         </Text>
       </View>
 

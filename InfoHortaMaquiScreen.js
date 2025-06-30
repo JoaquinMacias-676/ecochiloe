@@ -42,12 +42,12 @@ export default function InfoLechuga({ navigation }) {
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Exceso de agua puede{"\n"} afectar las raíces.{"\n"}
-          -Plagas menores, como{"\n"} hongos en ambientes{"\n"} muy húmedos.
+          -Exceso de agua puede{"\n"}afectar a las raíces.{"\n"}
+          -Plagas menores, como{"\n"}hongos en ambientes{"\n"}muy húmedos.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>Se cosecha en verano, entre enero{"\n"} y marzo, cuando los frutos están bien oscuros.</Text>
+        <Text style={styles.texto}>Se cosecha en verano, entre enero{"\n"}y marzo, cuando los frutos están bien oscuros.</Text>
       </View>
 
       <Pressable

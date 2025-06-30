@@ -15,7 +15,7 @@ export default function InfoMichay({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={[styles.cuadro_de_texto, { height: 440 }]}>
         <Text style={styles.titulo}>Michay (Berberis spp.)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -37,12 +37,12 @@ export default function InfoMichay({ navigation }) {
 
         <Image
           source={{ uri: 'https://cdn.portalfruticola.com/2019/10/52589881-tumblr_pa2s2exgir1qz4m9to1_1280.jpg' }}
-          style={styles.imagen_papa_bruja}
+          style={[styles.imagen, { top: 270, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Espinas molestas al manipular.{"\n"}
+          -Espinas molestas al{"\n"} manipular.{"\n"}
           -Lento crecimiento.
         </Text>
 
@@ -53,7 +53,7 @@ export default function InfoMichay({ navigation }) {
 
         <Text style={styles.subtitulo}>¿Para qué sirve?</Text>
         <Text style={styles.texto}>
-          Sus frutos ayudan al sistema digestivo{"\n"} y tienen alto valor antioxidante.
+          Sus frutos ayudan al sistema digestivo{"\n"}y tienen alto valor antioxidante.
         </Text>
       </View>
 

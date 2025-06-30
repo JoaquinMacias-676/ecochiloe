@@ -15,7 +15,7 @@ export default function InfoMatico({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={[styles.cuadro_de_texto, { height: 420 }]}>
         <Text style={styles.titulo}>Matico (Buddleja globosa)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -37,7 +37,7 @@ export default function InfoMatico({ navigation }) {
 
         <Image
           source={{ uri: 'https://http2.mlstatic.com/D_NQ_NP_784819-MLC78074223926_082024-O.webp' }}
-          style={styles.imagen_papa_bruja}
+          style={[styles.imagen, { top: 130, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

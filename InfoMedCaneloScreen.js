@@ -15,7 +15,7 @@ export default function InfoCanelo({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto}>
+      <View style={[styles.cuadro_de_texto, { height: 485 }]}>
         <Text style={styles.titulo}>Canelo (Drimys winteri)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -32,12 +32,12 @@ export default function InfoCanelo({ navigation }) {
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
           -Requiere riego frecuente.{"\n"}
-          -Crece mejor en climas lluviosos{"\n"} como el de Chiloé.
+          -Crece mejor en climas{"\n"}lluviosos{"\n"}como el de Chiloé.
         </Text>
 
         <Image
           source={{ uri: 'https://www.gochile.cl/fotos/full/63171-canelo-james-gaither@2x.jpg' }}
-          style={styles.imagen_papa_bruja}
+          style={[styles.imagen, { top: 175}]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
