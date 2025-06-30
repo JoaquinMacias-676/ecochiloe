@@ -37,7 +37,7 @@ export default function InfoCanelo({ navigation }) {
 
         <Image
           source={{ uri: 'https://www.gochile.cl/fotos/full/63171-canelo-james-gaither@2x.jpg' }}
-          style={[styles.imagen, { top: 175}]}
+          style={[styles.imagen, { top: 175 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
@@ -53,7 +53,7 @@ export default function InfoCanelo({ navigation }) {
 
         <Text style={styles.subtitulo}>¿Para qué sirve?</Text>
         <Text style={styles.texto}>
-          Alivia problemas respiratorios, dolores estomacales{"\n"} y se usa en limpias o ceremonias mapuche.
+          Alivia problemas respiratorios, dolores estomacales y se usa en limpias o ceremonias mapuche.
         </Text>
       </View>
 
