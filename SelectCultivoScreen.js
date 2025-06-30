@@ -44,12 +44,12 @@ export default function SeleccionCultivo({ navigation }) {
       </Pressable>
 
       <Pressable
-        onPress={() => navigation.navigate('Cereales')}
+        onPress={() => navigation.navigate('Medicinales')}
         style={({ pressed }) => [ 
             styles.botones_tipo_cultivo,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
         ]}>
-        <Text style={styles.textocolor_botones}>Cereales</Text>
+        <Text style={styles.textocolor_botones}>Medicinales</Text>
       </Pressable>
     </View>
   );
