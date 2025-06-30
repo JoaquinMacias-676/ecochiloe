@@ -21,10 +21,10 @@ export default function Frutas({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Chilco</Text>
+                    <Text style={styles.icono_texto}>Chilco</Text>
                     <Image 
-                        source={require('./assets/ecochiloe_logo.png')}
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/chilco.png')}
+                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]} />
                 </Pressable>
 
                 <Pressable
@@ -32,10 +32,10 @@ export default function Frutas({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Frutilla Blanca</Text>
+                    <Text style={styles.icono_texto}>Frutilla Blanca</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')}
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/frutilla_blanca.png')}
+                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]} />
                 </Pressable>
             </View>
 
@@ -45,10 +45,10 @@ export default function Frutas({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Murta</Text>
+                    <Text style={styles.icono_texto}>Murta</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')}
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/murta.png')}
+                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]} />
                 </Pressable>
 
                 <Pressable
@@ -56,9 +56,9 @@ export default function Frutas({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Zarzaparrilla</Text>
+                    <Text style={styles.icono_texto}>Zarzaparrilla</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')} 
+                        source={require('./assets/zarzaparrilla.png')} 
                         style={styles.cultivos_iconos} />
                 </Pressable>
             </View>  
