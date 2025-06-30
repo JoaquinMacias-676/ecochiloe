@@ -36,7 +36,7 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gunnera_tinctoria_7.jpg/250px-Gunnera_tinctoria_7.jpg' }}
-          style={styles.imagen_nalca}
+          style={[styles.imagen, { top: 285, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

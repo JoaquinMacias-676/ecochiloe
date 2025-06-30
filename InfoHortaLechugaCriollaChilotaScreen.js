@@ -36,7 +36,7 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://i0.wp.com/dinkos-semillas.com/wp-content/uploads/2018/04/lechuga_criolla.jpg?w=377&ssl=1' }}
-          style={styles.imagen_lechuga}
+          style={[styles.imagen, { top: 270, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

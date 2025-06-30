@@ -39,7 +39,7 @@ export default function InfoPapaClavelaOjona({ navigation }) {
 
         <Image
           source={{ uri: 'https://www.museodeancud.gob.cl/sites/www.museodeancud.gob.cl/files/2021-04/11%20FIG%2011%20_MG_2779.jpg' }}
-          style={styles.imagen_papa_clavela_ojona}
+          style={[styles.imagen, { top: 180, left: 175 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

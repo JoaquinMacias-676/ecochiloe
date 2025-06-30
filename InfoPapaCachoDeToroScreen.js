@@ -40,7 +40,7 @@ export default function InfoPapaCachoDeToro({ navigation }) {
 
         <Image
           source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_cacho_de_toro}
+          style={[styles.imagen, { top: 180, left: 175 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

@@ -33,7 +33,8 @@ export default function InfoPapaRoja({ navigation }) {
 
         <Image
           source={{ uri: 'https://tienda.frutaseloy.com/wp-content/uploads/2024/11/variedad-de-patata-roja-425x495.png.webp'}}
-          style={styles.imagen_papa_roja}/>
+          style={[styles.imagen, { top: 210, left: 175 }]}
+        />
           
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>

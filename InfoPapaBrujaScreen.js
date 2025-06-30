@@ -33,7 +33,7 @@ export default function InfoPapaBruja({ navigation }) {
 
         <Image
           source={{ uri: 'https://frutonchile.cl/wp-content/uploads/2019/12/papa-bruja.jpg'}}
-          style={styles.imagen_papa_bruja}/>
+          style={styles.imagen}/>
           
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>

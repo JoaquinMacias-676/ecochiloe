@@ -35,7 +35,7 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://www.portalagrochile.cl/wp-content/uploads/2024/02/SAG-Los-Lagos-certifica-envio-de-zarzaparrilla-roja-a-Europa-1.jpg' }}
-          style={styles.imagen_zarzaparrilla}
+          style={[styles.imagen, { top: 255, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

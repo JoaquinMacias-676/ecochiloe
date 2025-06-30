@@ -37,7 +37,7 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Maqui_chileno.jpg/250px-Maqui_chileno.jpg' }}
-          style={styles.imagen_maqui}
+          style={[styles.imagen, { top: 295, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

@@ -44,7 +44,7 @@ export default function InfoAjo({ navigation }) {
 
         <Image
           source={{ uri: 'https://www.portalagrochile.cl/wp-content/uploads/2025/04/SAG-Los-Lagos-certifica-semilla-de-ajo-chilote-y-destaca-esfuerzo-de-productoresas-de-Chiloe-696x458.jpg' }}
-          style={styles.imagen_ajo}
+          style={[styles.imagen, { top: 310, left: 185 }]}
         />
 
         <Text style={styles.subtitulo}>Cosecha</Text>

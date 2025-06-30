@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={[styles.cuadro_de_texto, { height: 435 }]}>
+      <View style={styles.cuadro_de_texto}>
         <Text style={styles.titulo}>Frutilla Blanca</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -30,13 +30,13 @@ export default function InfoLechuga({ navigation }) {
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
           -Lugar con sol parcial.{"\n"}
-          -Suelo húmedo, sin encharcar.{"\n"}
+          -Suelo húmedo, sin{"\n"}encharcar.{"\n"}
           -Sacar malezas que{"\n"}compitan con la planta.
         </Text>
 
         <Image
           source={{ uri: 'https://www.utalca.cl/content/uploads/2019/04/frutilla_blanca_utalca.jpg' }}
-          style={styles.imagen_frutilla}
+          style={[styles.imagen, { width: 110, height: 110, top: 160, left: 160 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>

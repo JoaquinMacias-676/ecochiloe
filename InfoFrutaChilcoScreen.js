@@ -35,7 +35,7 @@ export default function InfoChilco({ navigation }) {
 
         <Image
           source={{ uri: 'https://laderasur.com/wp-content/uploads/2018/10/chilco10.jpg' }}
-          style={styles.imagen_chilco}
+          style={[styles.imagen, { top: 280, left: 180 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
