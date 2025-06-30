@@ -21,7 +21,7 @@ export default function Tuberculos({ navigation }) {
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>Papa Bruja</Text>
+                <Text style={styles.icono_texto}>Papa Bruja</Text>
                 <Image 
                     source={require('./assets/papa_bruja.png')}
                     style={styles.cultivos_iconos}
@@ -33,7 +33,7 @@ export default function Tuberculos({ navigation }) {
                 style={({ pressed }) => [ 
                     styles.botones_clasificacion_cultivos,
                     { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.papas}>Papa Roja</Text>
+                <Text style={styles.icono_texto}>Papa Roja</Text>
                 <Image
                     source={require('./assets/papa_roja.png')}
                     style={styles.cultivos_iconos} />
@@ -46,9 +46,9 @@ export default function Tuberculos({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Papa Clavela Ojona</Text>
+                    <Text style={styles.icono_texto}>Papa Clavela Ojona</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')}
+                        source={require('./assets/papa_clavela_ojona.png')}
                         style={styles.cultivos_iconos} />
                 </Pressable>
 
@@ -57,7 +57,7 @@ export default function Tuberculos({ navigation }) {
                     style={({ pressed }) => [ 
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                    <Text style={styles.papas}>Papa Cacho de Toro</Text>
+                    <Text style={styles.icono_texto}>Papa Cacho de Toro</Text>
                 <Image
                     source={require('./assets/papa_cacho_de_toro.png')} 
                     style={styles.cultivos_iconos} />
