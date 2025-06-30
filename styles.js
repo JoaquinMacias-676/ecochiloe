@@ -163,14 +163,6 @@ export const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 
-  // Estilo iconos de cultivos
-  cultivos_iconos_papa_pukara: {
-    width: 100,
-    height: 100,
-    marginTop: 30,
-    resizeMode: 'contain',
-  },
-
 // Estilo Logo Login
   logo_estilo: {
     marginVertical: -50,
