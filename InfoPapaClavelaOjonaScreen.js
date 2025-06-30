@@ -15,7 +15,7 @@ export default function InfoPapaClavelaOjona({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto_papa_clavela_ojona}>
+      <View style={[styles.cuadro_de_texto, { height: 435 }]}>
         <Text style={styles.titulo}>PAPA CLAVELA OJONA</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>

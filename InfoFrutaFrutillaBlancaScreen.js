@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto_frutilla}>
+      <View style={[styles.cuadro_de_texto, { height: 435 }]}>
         <Text style={styles.titulo}>Frutilla Blanca</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -35,7 +35,7 @@ export default function InfoLechuga({ navigation }) {
         </Text>
 
         <Image
-          source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
+          source={{ uri: 'https://www.utalca.cl/content/uploads/2019/04/frutilla_blanca_utalca.jpg' }}
           style={styles.imagen_frutilla}
         />
 

@@ -1,13 +1,13 @@
 import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles_info';
 
-export default function InfoPapaCachoDeToro({ navigation }) {
+export default function InfoArrayan({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
 
       <Pressable
-        onPress={() => navigation.navigate('Tuberculos')}
+        onPress={() => navigation.navigate('Medicinales')}
         style={styles.flechaboton}>
         <Image
           source={require('./assets/flecha_atras.png')}
@@ -15,44 +15,44 @@ export default function InfoPapaCachoDeToro({ navigation }) {
         />
       </Pressable>
 
-      <View style={[styles.cuadro_de_texto, { height: 435 }]}>
-        <Text style={styles.titulo}>PAPA CACHO DE TORO</Text>
+      <View style={styles.cuadro_de_texto}>
+        <Text style={styles.titulo}>Arrayán (Luma apiculata)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
         <Text style={styles.texto}>
-          -Se corta en trozos con brotes.{"\n"}
-          -Se entierra a 10–15 cm de profundidad.{"\n"}
-          -Se deja 30–40 cm entre plantas.
+          -Por semillas o esquejes.{"\n"}
+          -Se planta en suelo húmedo{"\n"} y con sombra parcial.
         </Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
         <Text style={styles.texto}>
-          Entre septiembre y noviembre (primavera).
+          En otoño o primavera.
         </Text>
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Tierra suelta y con abono.{"\n"}
-          -Mantener el suelo húmedo.{"\n"}
-          -Sacarle las malezas.{"\n"}
-          -Agregar tierra en la base{"\n"} cuando va creciendo.
+          -Riego frecuente y buena ventilación.{"\n"}
+          -Crece lento pero es muy resistente.
         </Text>
 
         <Image
-          source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
-          style={styles.imagen_papa_cacho_de_toro}
+          source={{ uri: 'https://www.cincopinos.cl/cdn/shop/products/10a_24pTyd1nnvPQ0vLTQOW7Qil99UaNJ_5000x.jpg?v=1625150582' }}
+          style={styles.imagen_papa_bruja}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Exceso de agua puede pudrir.{"\n"}
-          -Plagas: gusanos, escarabajos, pulgones.{"\n"}
-          -Frío fuerte en etapas tempranas.
+          Puede ser atacado por hongos{"\n"} si hay mucha humedad.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
         <Text style={styles.texto}>
-          A los 3–4 meses, cuando la planta de arriba se seca.
+          Se usan hojas y frutos.
+        </Text>
+
+        <Text style={styles.subtitulo}>¿Para qué sirve?</Text>
+        <Text style={styles.texto}>
+          Ayuda en infecciones de garganta, diarreas{"\n"} y tiene efecto antiséptico.
         </Text>
       </View>
 

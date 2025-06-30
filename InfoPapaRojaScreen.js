@@ -14,7 +14,7 @@ export default function InfoPapaRoja({ navigation }) {
               style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
         </Pressable>
 
-      <View style={styles.cuadro_de_texto_papa_roja}>
+      <View style={[styles.cuadro_de_texto, { height: 475 }]}>
 
         <Text style={styles.titulo}>PAPA ROJA</Text>
           

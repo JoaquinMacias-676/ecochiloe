@@ -15,7 +15,7 @@ export default function InfoAjo({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto_ajo}>
+      <View style={[styles.cuadro_de_texto, { height: 485 }]}>
         <Text style={styles.titulo}>AJO CHILOTE</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -43,7 +43,7 @@ export default function InfoAjo({ navigation }) {
         </Text>
 
         <Image
-          source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
+          source={{ uri: 'https://www.portalagrochile.cl/wp-content/uploads/2025/04/SAG-Los-Lagos-certifica-semilla-de-ajo-chilote-y-destaca-esfuerzo-de-productoresas-de-Chiloe-696x458.jpg' }}
           style={styles.imagen_ajo}
         />
 

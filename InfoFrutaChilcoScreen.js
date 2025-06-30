@@ -1,8 +1,8 @@
 import { Text, View, Pressable, Image } from 'react-native';
 import { styles } from './styles_info';
 
-export default function InfoLechuga({ navigation }) {
-  return (
+export default function InfoChilco({ navigation }) {
+  return ( 
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
 
@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto_chilco}>
+      <View style={[styles.cuadro_de_texto, { height: 415 }]}>
         <Text style={styles.titulo}>Chilco</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -34,7 +34,7 @@ export default function InfoLechuga({ navigation }) {
         </Text>
 
         <Image
-          source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
+          source={{ uri: 'https://laderasur.com/wp-content/uploads/2018/10/chilco10.jpg' }}
           style={styles.imagen_chilco}
         />
 

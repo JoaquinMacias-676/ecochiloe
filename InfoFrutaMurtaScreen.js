@@ -15,7 +15,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={styles.cuadro_de_texto_murta}>
+      <View style={[styles.cuadro_de_texto, { height: 495 }]}>
         <Text style={styles.titulo}>La Murta</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -36,7 +36,7 @@ export default function InfoLechuga({ navigation }) {
         </Text>
 
         <Image
-          source={{ uri: 'https://locotemarket.com/cdn/shop/products/descarga_5_a4670e41-bc2a-4da0-aa14-19e2b06a6781.jpg?v=1620429853&width=259' }}
+          source={{ uri: 'https://www.chileestuyo.cl/wp-content/uploads/2021/04/Murta.jpg' }}
           style={styles.imagen_murta}
         />
 
