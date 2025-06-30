@@ -65,16 +65,6 @@ export const styles = StyleSheet.create({
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 1,
   },  
-// Texto de Papas
-  papas: {
-    fontSize: 15,
-    color: 'white',
-    fontWeight: 'Black',
-    paddingTop: 20,
-    textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
-  },
 
 // Estilo para los botones
   botones_login: {
@@ -161,6 +151,17 @@ export const styles = StyleSheet.create({
     height: 125,
     marginTop: 20,
     resizeMode: 'contain',
+  },
+
+// Texto de Iconos Cultivos
+  icono_texto: {
+    fontSize: 15,
+    color: 'white',
+    fontWeight: 'Black',
+    paddingTop: 20,
+    textShadowColor: 'black',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 1,
   },
 
 // Estilo Logo Login
