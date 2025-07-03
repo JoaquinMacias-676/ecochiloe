@@ -29,10 +29,13 @@ export const styles = StyleSheet.create({
   titulo_interfaz: {
     fontSize: 30,
     color: 'white',
-    fontWeight: 'bold',
+    fontFamily: 'Baloo 2 Bold',
     textAlign: 'center',
     position: 'absolute',
     top: 73,
+    textShadowColor: 'black',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
   },
 
 // Estulo para el texto de bienvenida
