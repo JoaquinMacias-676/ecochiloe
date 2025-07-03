@@ -9,6 +9,14 @@ export const styles = StyleSheet.create({
     paddingTop: 150,
   },
 
+// Estilo contenedor de "Mis cultivos"
+  container_contorno: {
+    position: 'relative',
+    marginTop: -10,
+    marginBottom: 20,
+    marginRight: 150,
+  },
+
 // Estilo del fondo blanco
   container_blanco: {
     flex: 1,
@@ -35,35 +43,35 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-// Estilo para el título  
+// Estilo para el título "Mis Cultivos"
   textocolor: {
+    fontFamily: 'Baloo 2 Bold',
     color: 'white',
-    fontSize: 25,
-    fontFamily: 'Baloo2-ExtraBold',
-    fontWeight: 'bold',
+    fontSize: 30,
     textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
   },
 
 // Estilo para el texto de los botones
-  textocolor_botones: {
-    fontSize: 15,
+  texto_selec_cultivos: {
+    fontSize: 20,
+    textAlign: 'center',
     color: 'white',
-    fontWeight: 'bold',
+    fontFamily: 'Baloo 2 Bold',
     textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
   },
 
 // Estilo para el contador de cultivos en la pantalla principal
   textocolor_contador: {
     fontSize: 20,
     color: 'white',
-    fontWeight: 'bold',
+    fontFamily: 'Baloo 2 Bold',
     textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
   },  
 
 // Estilo para los botones
@@ -104,12 +112,12 @@ export const styles = StyleSheet.create({
 
 // Estilo para el texto de los botones de la pantalla principal y login
   textobotones_home: {
-    fontSize: 18,
+    fontSize: 20,
     color: 'white',
-    fontWeight: 'bold',
+    fontFamily: 'Baloo 2 Bold',
     textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
   },
 
 // Estilo para los botones de los tipos de cultivos (botones que tienen iconos)
@@ -155,13 +163,14 @@ export const styles = StyleSheet.create({
 
 // Texto de Iconos Cultivos
   icono_texto: {
-    fontSize: 15,
+    fontSize: 20,
     color: 'white',
-    fontWeight: 'Black',
+    fontFamily: 'Baloo 2 Bold',
     paddingTop: 20,
     textShadowColor: 'black',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 1,
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
+    textAlign: 'center',
   },
 
 // Estilo Logo Login
@@ -170,6 +179,5 @@ export const styles = StyleSheet.create({
     width: 275,
     height: 275,
     resizeMode: 'contain',
-
   },
 });
