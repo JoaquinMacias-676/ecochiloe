@@ -49,7 +49,7 @@ export default function Hortalizas({ navigation }) {
                 <Text style={styles.icono_texto}>Lechuga Criolla Chilota</Text>
                 <Image
                     source={require('./assets/lechuga.png')}
-                    style={[styles.cultivos_iconos, { width: 110, height: 110, top: -10 }]} />
+                    style={[styles.cultivos_iconos, { width: 110, height: 110, top: -20 }]} />
             </Pressable>
             </View>
 
@@ -73,7 +73,7 @@ export default function Hortalizas({ navigation }) {
                     <Text style={styles.icono_texto}>Nalca</Text>
                 <Image
                     source={require('./assets/nalca.png')} 
-                    style={styles.cultivos_iconos} />
+                    style={[styles.cultivos_iconos, { top: -10}]} />
             </Pressable>
             </View>  
         </View>

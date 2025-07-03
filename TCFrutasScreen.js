@@ -71,7 +71,7 @@ export default function Frutas({ navigation }) {
                     <Text style={styles.icono_texto}>Zarzaparrilla</Text>
                     <Image
                         source={require('./assets/zarzaparrilla.png')} 
-                        style={styles.cultivos_iconos} />
+                        style={[styles.cultivos_iconos, { top: -5 }]} />
                 </Pressable>
             </View>  
         </View>

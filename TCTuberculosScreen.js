@@ -37,7 +37,7 @@ export default function Tuberculos({ navigation }) {
                 <Text style={styles.icono_texto}>Papa Bruja</Text>
                 <Image 
                     source={require('./assets/papa_bruja.png')}
-                    style={styles.cultivos_iconos}
+                    style={[styles.cultivos_iconos, { top: -5} ]}
                 />
             </Pressable>
 
@@ -49,7 +49,7 @@ export default function Tuberculos({ navigation }) {
                 <Text style={styles.icono_texto}>Papa Roja</Text>
                 <Image
                     source={require('./assets/papa_roja.png')}
-                    style={styles.cultivos_iconos} />
+                    style={[styles.cultivos_iconos, { top: -20, width: 150, height: 150 }]} />
             </Pressable>
             </View>
 
@@ -62,7 +62,7 @@ export default function Tuberculos({ navigation }) {
                     <Text style={styles.icono_texto}>Papa Clavela Ojona</Text>
                     <Image
                         source={require('./assets/papa_clavela_ojona.png')}
-                        style={styles.cultivos_iconos} />
+                        style={[styles.cultivos_iconos, { top: -20 }]} />
                 </Pressable>
 
                 <Pressable
@@ -73,7 +73,7 @@ export default function Tuberculos({ navigation }) {
                     <Text style={styles.icono_texto}>Papa Cacho de Toro</Text>
                 <Image
                     source={require('./assets/papa_cacho_de_toro.png')} 
-                    style={styles.cultivos_iconos} />
+                    style={[styles.cultivos_iconos, { top: -25, transform: [{ rotate: '10deg'}] }]} />
             </Pressable>
             </View>  
         </View>
