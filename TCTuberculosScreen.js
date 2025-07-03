@@ -14,7 +14,7 @@ export default function Tuberculos({ navigation }) {
       </View>
     );
   }
-
+  
     return (
         <View style={styles.container}>
 
