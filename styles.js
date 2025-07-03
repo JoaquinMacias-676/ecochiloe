@@ -41,9 +41,9 @@ export const styles = StyleSheet.create({
 // Estulo para el texto de bienvenida
   bienvenida_texto: {
     marginVertical: -30,
-    fontSize: 20,
+    fontSize: 22,
     color: '#00000',
-    fontWeight: 'bold',
+    fontFamily: 'Roboto Condensed Bold',
   },
 
 // Estilo para el título "Mis Cultivos"
@@ -169,7 +169,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: 'white',
     fontFamily: 'Baloo 2 Bold',
-    paddingTop: 20,
+    paddingTop: 10,
     textShadowColor: 'black',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 6,

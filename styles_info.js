@@ -64,27 +64,30 @@ export const styles = StyleSheet.create({
 // Texto color botón "añadir"
   texto_boton_añadir: {
     color: 'white',
-    fontSize: 15,
+    fontSize: 20,
+    fontFamily: 'Baloo 2 Bold',
     textShadowColor: 'black',
-    textShadowRadius: 5,
+    textShadowOffset: { width: 0, height: 0},
+    textShadowRadius: 6,
   },
 
 // Estilo para el título que describe la pantalla
   titulo_interfaz: {
     fontSize: 30,
     color: 'white',
-    fontWeight: 'bold',
+    fontFamily: 'Baloo 2 Bold',
     textAlign: 'center',
     position: 'absolute',
     top: 73,
-    shadowRadius: 2,
-    shadowColor: 'black',
+    textShadowColor: 'black',
+    textShadowOffset: { width: 0, height: 0},
+    textShadowRadius: 6,
   },
 // Título
   titulo: {
     fontSize: 22,
     color: 'black',
-    fontWeight: 'bold',
+    fontFamily: 'Roboto Condensed Bold',
     textAlign: 'center',
     marginBottom: 10,
   },
@@ -93,7 +96,7 @@ export const styles = StyleSheet.create({
   subtitulo: {
     fontSize: 15,
     color: 'black',
-    fontWeight: 'bold',
+    fontFamily: 'Roboto Condensed Bold',
     textAlign: 'left',
     marginBottom: 2,
   },
@@ -101,6 +104,7 @@ export const styles = StyleSheet.create({
 // Texto normal
   texto: {
     fontSize: 12,
+    fontFamily: 'Roboto Light',
     color: 'black',
     textAlign: 'left',
     marginBottom: 10,
