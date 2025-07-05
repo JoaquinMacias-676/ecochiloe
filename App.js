@@ -2,9 +2,15 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// Importando interfaces del creación/inicio de cuenta, login
-import CrearCuentaCorreoScreen from './CrearCuentaCorreoScreen';
-import LoginScreen from './LoginScreen';
+// Importando interfaces de creación de cuenta
+import CrearCuentaScreen from './CrearCuentaScreen';
+import CrearContraseñaScreen from './CrearCContraseñaScreen'
+import AgregarNombreScreen from './CrearCAgregarNombreScreen';
+import FechaNacimientoScreen from './CrearCFechaNacimientoScreen';
+
+// Importando interfaces de inicio de sesión
+import IniciarSesionScreen from './IniciarSesionScreen';
+import IniciarSesionContraseñaScreen from './IniciarSesionContraseñaScreen';
 
 // Importando interfaces
 import HomeScreen from './HomeScreen';
@@ -45,8 +51,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="CrearCuentaCorreo" component={CrearCuentaCorreoScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="CrearCuenta" component={CrearCuentaScreen} />
+        <Stack.Screen name='CrearContraseña' component={CrearContraseñaScreen} />
+        <Stack.Screen name='AgregarNombre' component={AgregarNombreScreen} />
+        <Stack.Screen name='FechaNacimiento' component={FechaNacimientoScreen} />
+        <Stack.Screen name='IniciarSesion' component={IniciarSesionScreen} />
+        <Stack.Screen name='IniciarSesionContraseña' component={IniciarSesionContraseñaScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="SeleccionCultivo" component={SelectCultivoScreen} />
         <Stack.Screen name="Tuberculos" component={TuberculosScreen} />
