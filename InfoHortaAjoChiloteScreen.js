@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
 export default function InfoAjo({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
@@ -21,7 +36,7 @@ export default function InfoAjo({ navigation }) {
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
         <Text style={styles.texto}>
           -Se planta el diente de ajo (no la cabeza entera).{"\n"}
-          -Se entierra con la punta hacia arriba, a unos 3-5 cm de profundidad.{"\n"}
+          -Se entierra con la punta hacia{"\n"} arriba, a unos 3-5 cm de profundidad.{"\n"}
           -Dejar 10-15 cm de distancia entre cada planta.
         </Text>
 
@@ -30,7 +45,7 @@ export default function InfoAjo({ navigation }) {
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Suelo suelto, bien drenado y con buena materia orgánica.{"\n"}
+          -Suelo suelto, bien drenado y con buena{"\n"} materia orgánica.{"\n"}
           -Riego moderado, evitando el exceso de agua.{"\n"}
           -Mantener libre de malezas.
         </Text>

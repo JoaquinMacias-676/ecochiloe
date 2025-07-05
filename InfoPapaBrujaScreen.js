@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
 export default function InfoPapaBruja({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+  
   return (
     <View style={styles.container}>
 
@@ -19,7 +34,7 @@ export default function InfoPapaBruja({ navigation }) {
         <Text style={styles.titulo}>PAPA BRUJA</Text>
           
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
-        <Text style={styles.texto}>Se corta la papa en pedazos con brotes (ojos) y se entierran en la tierra, a unos 10 cm de profundidad.</Text>
+        <Text style={styles.texto}>Se corta la papa en pedazos con brotes (ojos) y se entierran a unos 10 cm de profundidad.</Text>
           
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
         <Text style={styles.texto}>Entre Agosto y Octubre, cuando empieza la primavera en Chiloé.</Text>
@@ -38,7 +53,7 @@ export default function InfoPapaBruja({ navigation }) {
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
           -Mucha agua puede pudrir la papa.{"\n"}
-          -Pueden aparecer gusanos o bichos que dañen el cultivo.
+          -Pueden aparecer gusanos o bichos que{"\n"} dañen el cultivo.
         </Text>
           
         <Text style={styles.subtitulo}>Cosecha</Text>

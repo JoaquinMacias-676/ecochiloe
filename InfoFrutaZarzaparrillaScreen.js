@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
-export default function InfoLechuga({ navigation }) {
+export default function InfoZarzaparrilla({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
@@ -15,7 +30,7 @@ export default function InfoLechuga({ navigation }) {
         />
       </Pressable>
 
-      <View style={[styles.cuadro_de_texto, { height: 412 }]}>
+      <View style={[styles.cuadro_de_texto, { height: 400 }]}>
         <Text style={styles.titulo}>Zarzaparrilla</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
@@ -35,17 +50,17 @@ export default function InfoLechuga({ navigation }) {
 
         <Image
           source={{ uri: 'https://www.portalagrochile.cl/wp-content/uploads/2024/02/SAG-Los-Lagos-certifica-envio-de-zarzaparrilla-roja-a-Europa-1.jpg' }}
-          style={[styles.imagen, { top: 255, left: 180 }]}
+          style={[styles.imagen, { top: 255, left: 185 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
-          -Malezas cercanas pueden{"\n"}robarle nutrientes.{"\n"}
-          -Exceso de sol puede hacer{"\n"}que se sequé.
+          -Malezas cercanas pueden{"\n"} robarle nutrientes.{"\n"}
+          -Exceso de sol puede hacer{"\n"} que se sequé.
         </Text>
 
         <Text style={styles.subtitulo}>Cosecha</Text>
-        <Text style={styles.texto}>En verano, cuando da{"\n"}pequeñas bayas oscuras (También{"\n"}se puede usar su raíz).</Text>
+        <Text style={styles.texto}>En verano, cuando da pequeñas{"\n"}bayas oscuras (También se puede usar su raíz).</Text>
       </View>
 
       <Pressable

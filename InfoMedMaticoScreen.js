@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
 export default function InfoMatico({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
@@ -52,7 +67,7 @@ export default function InfoMatico({ navigation }) {
 
         <Text style={styles.subtitulo}>¿Para qué sirve?</Text>
         <Text style={styles.texto}>
-          Es cicatrizante natural, se usa para{"\n"} heridas, quemaduras y malestares estomacales.
+          Es cicatrizante natural, se usa para{"\n"}heridas, quemaduras y malestares estomacales.
         </Text>
       </View>
 

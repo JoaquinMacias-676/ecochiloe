@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
-export default function InfoLechuga({ navigation }) {
+export default function InfoMurta({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
@@ -20,8 +35,8 @@ export default function InfoLechuga({ navigation }) {
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
         <Text style={styles.texto}>
-          -Se siembra en suelos bien drenados, con algo de materia orgánica.{"\n"}
-          -Puede plantarse en hoyos de unos 10-15 cm de profundidad.{"\n"}
+          -Se siembra en suelos bien drenados, con algo de{"\n"} materia orgánica.{"\n"}
+          -Puede plantarse en hoyos de unos 10-15 cm de{"\n"} profundidad.{"\n"}
           -Mantén una distancia de 1-2 metros entre plantas.
         </Text>
 
@@ -30,9 +45,9 @@ export default function InfoLechuga({ navigation }) {
 
         <Text style={styles.subtitulo}>Cuidados básicos</Text>
         <Text style={styles.texto}>
-          -Prefiere suelos ácidos y{"\n"}ligeramente húmedos.{"\n"}
-          -Riego moderado, evitando{"\n"}el encharcamiento.{"\n"}
-          -Necesita algo de sombra,{"\n"}pero también soporta el{"\n"}sol parcial.
+          -Prefiere suelos ácidos y{"\n"} ligeramente húmedos.{"\n"}
+          -Riego moderado, evitando{"\n"} el encharcamiento.{"\n"}
+          -Necesita algo de sombra,{"\n"} pero también soporta el{"\n"} sol parcial.
         </Text>
 
         <Image

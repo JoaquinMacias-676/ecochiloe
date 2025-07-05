@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
 export default function InfoPapaRoja({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+  
   return (
     <View style={styles.container}>
 
@@ -39,7 +54,7 @@ export default function InfoPapaRoja({ navigation }) {
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
         <Text style={styles.texto}>
           -Exceso de agua puede hacer que se pudran.{"\n"}
-          -Plagas como gusanos blancos o pulgones pueden afectarla.
+          -Plagas como gusanos blancos o pulgones{"\n"} pueden afectarla.
         </Text>
           
         <Text style={styles.subtitulo}>Cosecha</Text>

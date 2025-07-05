@@ -3,7 +3,7 @@ import { styles } from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
 
-export default function Home({ navigation }) {
+export default function Home({ navigation }) { 
   const [fontsLoaded] = useFonts({
     'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
   });

@@ -1,7 +1,22 @@
-import { Text, View, Pressable, Image } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import { useFonts } from 'expo-font';
 
 export default function InfoChilco({ navigation }) {
+  const [fontsLoaded] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
+    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#00bf63" />
+      </View>
+    );
+  }
+
   return ( 
     <View style={styles.container}>
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
@@ -21,7 +36,7 @@ export default function InfoChilco({ navigation }) {
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
         <Text style={styles.texto}>
           -Por esquejes o brotes.{"\n"}
-          -Se planta en tierra húmeda, en zonas con sombra o sol suave.
+          -Se planta en tierra húmeda, en zonas con{"\n"} sombra o sol suave.
         </Text>
 
         <Text style={styles.subtitulo}>¿Cuándo plantar?</Text>
