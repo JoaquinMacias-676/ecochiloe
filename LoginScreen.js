@@ -1,5 +1,5 @@
 import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
-import { styles } from './styles';
+import { styles } from './styles_login';
 import { useFonts } from 'expo-font';
 
 export default function Login({ navigation }) {
@@ -26,7 +26,7 @@ export default function Login({ navigation }) {
         style={({ pressed }) => [ 
             styles.botones_login,
             { backgroundColor: pressed ? '#0c7744' : '#78e0af' }]}>
-        <Text style={styles.textobotones_home}>INICIAR</Text>
+        <Text style={styles.textobotones_login}>INICIAR</Text>
       </Pressable>
     </View>
   );
