@@ -25,7 +25,7 @@ export default function Cereales({ navigation }) {
                 onPress={() => navigation.navigate('SeleccionCultivo')}
                 style={{
                     position: 'absolute',
-                    top: 83,
+                    top: 120,
                     left: 30,
                 }}>
                 <Icon name='caret-left' size={25} color="#fff" style={{ zIndex: 1 }}/>

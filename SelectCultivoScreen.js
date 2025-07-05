@@ -17,7 +17,7 @@ export default function SeleccionCultivo({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: 180 }]}>
       
       <Text style={styles.titulo_interfaz}>TIPO DE CULTIVOS</Text>
 
@@ -25,7 +25,7 @@ export default function SeleccionCultivo({ navigation }) {
         onPress={() => navigation.navigate('Home')}
         style={{
           position: 'absolute',
-          top: 83,
+          top: 120,
           left: 30,
         }}>
           <Icon name='caret-left' size={25} color="#fff" style={{ zIndex: 1 }}/>
