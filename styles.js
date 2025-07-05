@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'Baloo 2 Bold',
     textAlign: 'center',
     position: 'absolute',
-    top: 73,
+    top: 110,
     textShadowColor: 'black',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 6,
