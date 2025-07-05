@@ -44,6 +44,7 @@ export const styles = StyleSheet.create({
     fontSize: 22,
     color: '#00000',
     fontFamily: 'Roboto Condensed Bold',
+    fontWeight: '900',
   },
 
 // Estilo para el título "Mis Cultivos"
@@ -136,21 +137,6 @@ export const styles = StyleSheet.create({
     borderColor: '#0c7744', 
   },
 
-// Estilo Boton flecha
-  flechaboton: {
-    position: 'absolute',
-    top: 50,
-    left: -10,
-    padding: 30,
-  },
-
-// Estilo imagen flecha
-  flechaimagen: {
-    width: 30,
-    height: 30,
-    resizeMode: 'contain',
-    color: '#000000',
-  },
 // Estilo para que los botones esten uno al lado del otro
   botones_horizontal_cultivos: {
     flexDirection: 'row',
