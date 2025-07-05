@@ -6,8 +6,8 @@ import { useFonts } from 'expo-font';
 export default function InfoNalca({ navigation }) {
   const [fontsLoaded] = useFonts({
     'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
-    'Roboto Condensed Bold': require('./assets/fonts/Roboto_Condensed-Bold.ttf'),
-    'Roboto Light': require('./assets/fonts/Roboto-Light.ttf'),
+    'Roboto Bold': require('./assets/fonts/Roboto-Bold.ttf'),
+    'Roboto Regular': require('./assets/fonts/Roboto-Regular.ttf'),
   });
 
   if (!fontsLoaded) {
