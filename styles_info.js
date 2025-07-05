@@ -10,22 +10,6 @@ export const styles = StyleSheet.create({
     paddingTop: 150,
   },
 
-// Estilo Boton flecha
-  flechaboton: {
-    position: 'absolute',
-    top: 50,
-    left: -10,
-    padding: 30,
-  },
-
-// Estilo imagen flecha
-  flechaimagen: {
-    width: 30,
-    height: 30,
-    resizeMode: 'contain',
-    color: '#000000',
-  },
-
 // Cuadro de texto
   cuadro_de_texto: {
     width: 300,
