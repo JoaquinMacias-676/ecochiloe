@@ -22,8 +22,13 @@ export default function CrearCuentaCorreo({ navigation }) {
         <Image
           source={require('./assets/ecochiloe_3.png')}
           style={styles.logo_estilo} />
-          
-        <Text style={styles.textobotones_login}>Hola</Text>
+        <Pressable
+        onPress={() => navigation.navigate('Login')}
+        style={({ pressed }) => [ 
+            styles.botones_login,
+            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }]}>
+        <Text style={styles.textobotones_login}>boton de prueba</Text>
+        </Pressable>
     </View>
   );
 }
