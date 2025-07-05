@@ -17,7 +17,7 @@ export default function Home({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: 120 }]}>
 
       <Text style={styles.textocolor}>MIS CULTIVOS</Text>
       <Text style={styles.textocolor_contador}>0/3</Text>
@@ -35,7 +35,7 @@ export default function Home({ navigation }) {
             }
         ]}>
         <Text style={styles.textobotones_home}>¡Agrega un Cultivo!</Text>
-        <Icon name="plus" size={24} color="#000" />
+        <Icon name="plus" size={24} color="#136c42" />
       </Pressable>
 
       <Pressable
@@ -51,7 +51,7 @@ export default function Home({ navigation }) {
             }
         ]}>
         <Text style={styles.textobotones_home}>¡Agrega un Cultivo!</Text>
-        <Icon name="plus" size={24} color="#000" />
+        <Icon name="plus" size={24} color="#136c42" />
       </Pressable>
 
       <Pressable
@@ -67,7 +67,7 @@ export default function Home({ navigation }) {
             }
         ]}>
         <Text style={styles.textobotones_home}>¡Agrega un Cultivo!</Text>
-        <Icon name="plus" size={24} color="#000" />
+        <Icon name="plus" size={24} color="#136c42" />
       </Pressable>
     </View>
   );
