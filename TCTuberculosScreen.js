@@ -37,28 +37,28 @@ export default function Tuberculos({ navigation }) {
             </Pressable>
             
             <View style={styles.botones_horizontal_cultivos}>
-            <Pressable
-                onPress={() => navigation.navigate('InfoPapaBruja')}
-                style={({ pressed }) => [ 
-                    styles.botones_clasificacion_cultivos,
-                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.icono_texto}>Papa Bruja</Text>
-                <Image 
-                    source={require('./assets/papa_bruja.png')}
-                    style={[styles.cultivos_iconos, { top: -5} ]}
-                />
-            </Pressable>
+                <Pressable
+                    onPress={() => navigation.navigate('InfoPapaBruja')}
+                    style={({ pressed }) => [ 
+                        styles.botones_clasificacion_cultivos,
+                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                    <Text style={styles.icono_texto}>Papa Bruja</Text>
+                    <Image 
+                        source={require('./assets/papa_bruja.png')}
+                        style={[styles.cultivos_iconos, { top: -5} ]}
+                    />
+                </Pressable>
 
-            <Pressable
-                onPress={() => navigation.navigate('InfoPapaRoja')}
-                style={({ pressed }) => [ 
-                    styles.botones_clasificacion_cultivos,
-                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.icono_texto}>Papa Roja</Text>
-                <Image
-                    source={require('./assets/papa_roja.png')}
-                    style={[styles.cultivos_iconos, { top: -20, width: 150, height: 150 }]} />
-            </Pressable>
+                <Pressable
+                    onPress={() => navigation.navigate('InfoPapaRoja')}
+                    style={({ pressed }) => [ 
+                        styles.botones_clasificacion_cultivos,
+                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                    <Text style={styles.icono_texto}>Papa Roja</Text>
+                    <Image
+                        source={require('./assets/papa_roja.png')}
+                        style={[styles.cultivos_iconos, { top: -20, width: 150, height: 150 }]} />
+                </Pressable>
             </View>
 
             <View style={styles.botones_horizontal_cultivos}>
@@ -79,10 +79,10 @@ export default function Tuberculos({ navigation }) {
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.icono_texto}>Papa Cacho de Toro</Text>
-                <Image
-                    source={require('./assets/papa_cacho_de_toro.png')} 
-                    style={[styles.cultivos_iconos, { top: -25, transform: [{ rotate: '10deg'}] }]} />
-            </Pressable>
+                    <Image
+                        source={require('./assets/papa_cacho_de_toro.png')} 
+                        style={[styles.cultivos_iconos, { top: -25, transform: [{ rotate: '10deg'}] }]} />
+                </Pressable>
             </View>  
         </View>
     );

@@ -1,5 +1,6 @@
 import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
 
 export default function Hortalizas({ navigation }) {
@@ -22,35 +23,42 @@ export default function Hortalizas({ navigation }) {
 
             <Pressable
                 onPress={() => navigation.navigate('SeleccionCultivo')}
-                style={styles.flechaboton}>
-                <Image
-                    source={require('./assets/flecha_atras.png')}
-                    style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
+                style={{
+                    position: 'absolute',
+                    top: 83,
+                    left: 30,
+                }}>
+                <Icon name='caret-left' size={25} color="#fff" style={{ zIndex: 1 }}/>
+                <Icon name='caret-left' size={55} color="#000" style={{
+                    top: -40,
+                    right: 6.5,
+                    zIndex: 0,
+                }} />
             </Pressable>
 
             <View style={styles.botones_horizontal_cultivos}>
-            <Pressable
-                onPress={() => navigation.navigate('InfoAjo')}
-                style={({ pressed }) => [ 
-                    styles.botones_clasificacion_cultivos,
-                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.icono_texto}>Ajo Chilote</Text>
-                <Image 
-                    source={require('./assets/ajo_chilote.png')}
-                    style={[styles.cultivos_iconos, { width: 150, height: 150, top: -20 }]}
-                />
-            </Pressable>
+                <Pressable
+                    onPress={() => navigation.navigate('InfoAjo')}
+                    style={({ pressed }) => [ 
+                        styles.botones_clasificacion_cultivos,
+                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                    <Text style={styles.icono_texto}>Ajo Chilote</Text>
+                    <Image 
+                        source={require('./assets/ajo_chilote.png')}
+                        style={[styles.cultivos_iconos, { width: 150, height: 150, top: -20 }]}
+                    />
+                </Pressable>
 
-            <Pressable
-                onPress={() => navigation.navigate('InfoLechuga')}
-                style={({ pressed }) => [ 
-                    styles.botones_clasificacion_cultivos,
-                    { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
-                <Text style={styles.icono_texto}>Lechuga Criolla Chilota</Text>
-                <Image
-                    source={require('./assets/lechuga.png')}
-                    style={[styles.cultivos_iconos, { width: 110, height: 110, top: -20 }]} />
-            </Pressable>
+                <Pressable
+                    onPress={() => navigation.navigate('InfoLechuga')}
+                    style={({ pressed }) => [ 
+                        styles.botones_clasificacion_cultivos,
+                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                    <Text style={styles.icono_texto}>Lechuga Criolla Chilota</Text>
+                    <Image
+                        source={require('./assets/lechuga.png')}
+                        style={[styles.cultivos_iconos, { width: 110, height: 110, top: -20 }]} />
+                </Pressable>
             </View>
 
             <View style={styles.botones_horizontal_cultivos}>
@@ -71,10 +79,10 @@ export default function Hortalizas({ navigation }) {
                         styles.botones_clasificacion_cultivos,
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.icono_texto}>Nalca</Text>
-                <Image
-                    source={require('./assets/nalca.png')} 
-                    style={[styles.cultivos_iconos, { top: -10}]} />
-            </Pressable>
+                    <Image
+                        source={require('./assets/nalca.png')} 
+                        style={[styles.cultivos_iconos, { top: -10}]} />
+                </Pressable>
             </View>  
         </View>
     );
