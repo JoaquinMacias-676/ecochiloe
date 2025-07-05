@@ -2,8 +2,11 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// Importando interfaces
+// Importando interfaces del creación/inicio de cuenta, login
+import CrearCuentaCorreoScreen from './CrearCuentaCorreoScreen';
 import LoginScreen from './LoginScreen';
+
+// Importando interfaces
 import HomeScreen from './HomeScreen';
 import SelectCultivoScreen from './SelectCultivoScreen';
 import TuberculosScreen from './TCTuberculosScreen';
@@ -42,6 +45,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="CrearCuentaCorreo" component={CrearCuentaCorreoScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="SeleccionCultivo" component={SelectCultivoScreen} />
