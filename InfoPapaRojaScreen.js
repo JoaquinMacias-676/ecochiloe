@@ -1,5 +1,6 @@
 import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
 import { styles } from './styles_info';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
 
 export default function InfoPapaRoja({ navigation }) {
@@ -23,10 +24,17 @@ export default function InfoPapaRoja({ navigation }) {
       <Text style={styles.titulo_interfaz}>CUIDADOS</Text>
         <Pressable
           onPress={() => navigation.navigate('Tuberculos')}
-          style={styles.flechaboton}>
-          <Image
-              source={require('./assets/flecha_atras.png')}
-              style={[styles.flechaimagen, { tintColor: '#000000'}]}/>
+          style={{
+            position: 'absolute',
+            top: 83,
+            left: 30,
+          }}>
+          <Icon name='caret-left' size={25} color="#fff" style={{ zIndex: 1 }}/>
+          <Icon name='caret-left' size={55} color="#000" style={{
+            top: -40,
+            right: 6.5,
+            zIndex: 0,
+          }} />
         </Pressable>
 
       <View style={[styles.cuadro_de_texto, { height: 475 }]}>
