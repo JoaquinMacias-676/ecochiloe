@@ -44,8 +44,8 @@ export default function Cereales({ navigation }) {
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.icono_texto}>Arrayán</Text>
                     <Image 
-                        source={require('./assets/ecochiloe_logo.png')}
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/arrayan.png')}
+                        style={[styles.cultivos_iconos, { top: -15, width: 135, height: 135 }]} />
                 </Pressable>
 
                 <Pressable
@@ -55,8 +55,8 @@ export default function Cereales({ navigation }) {
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.icono_texto}>Canelo</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')}
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/canelo.png')}
+                        style={[styles.cultivos_iconos, { top: -20, width: 145, height: 145 }]} />
                 </Pressable>
             </View>
 
