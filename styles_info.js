@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
   titulo: {
     fontSize: 22,
     color: 'black',
-    fontFamily: 'Roboto Condensed Bold',
+    fontFamily: 'Roboto Bold',
     fontWeight: '900',
     textAlign: 'center',
     marginBottom: 10,
@@ -81,7 +81,7 @@ export const styles = StyleSheet.create({
   subtitulo: {
     fontSize: 15,
     color: 'black',
-    fontFamily: 'Roboto Condensed Bold',
+    fontFamily: 'Roboto Bold',
     fontWeight: '900',
     textAlign: 'left',
     marginBottom: 2,
@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
 // Texto normal
   texto: {
     fontSize: 12,
-    fontFamily: 'Roboto Light',
+    fontFamily: 'Roboto Regular',
     color: 'black',
     textAlign: 'left',
     marginBottom: 10,

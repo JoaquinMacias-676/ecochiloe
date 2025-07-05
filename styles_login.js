@@ -6,9 +6,20 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    paddingTop: 150,
+    paddingTop: 70,
   },
 
+// Botones de login
+  botones: {
+    width: 330,
+    height: 40, 
+    borderRadius: 14, 
+    borderWidth: 2,
+    marginTop: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: '#ebebeb',
+  },
 // Estilo para el texto del login
   textobotones_login: {
     fontSize: 20,
@@ -19,7 +30,7 @@ export const styles = StyleSheet.create({
     textShadowRadius: 6,
   },
 
-// Estulo para el texto de bienvenida
+// Estilo para el texto de bienvenida
   bienvenida_texto: {
     marginVertical: -30,
     fontSize: 22,
@@ -43,8 +54,35 @@ export const styles = StyleSheet.create({
 // Estilo Logo Login
   logo_estilo: {
     marginVertical: -50,
-    width: 275,
-    height: 275,
+    width: 260,
+    height: 260,
     resizeMode: 'contain',
+  },
+
+// Estilo para el cuadro de "Inicia de sesión"
+  container_gris: {
+    width: '100%',
+    height: 45,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ebebeb',
+    marginTop: 50,
+  },
+
+// Texto grande para "Títulos"
+  texto_grande: {
+    fontSize: 27,
+    color: 'black',
+    fontFamily: 'Roboto Bold',
+    fontWeight: '900',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+
+// Texto normal
+  texto_normal: {
+    fontSize: 15,
+    fontFamily: 'Roboto Regular',
+    color: 'black',
   },
 });

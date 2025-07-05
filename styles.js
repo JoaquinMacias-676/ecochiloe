@@ -85,7 +85,7 @@ export const styles = StyleSheet.create({
     borderColor: '#0c7744', 
   },
 
-// Estilo para el texto de los botones de la pantalla principal y login
+// Estilo para el texto de los botones de la pantalla principal
   textobotones_home: {
     fontSize: 20,
     color: 'white',
