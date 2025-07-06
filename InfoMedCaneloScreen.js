@@ -84,7 +84,7 @@ export default function InfoCanelo({ navigation }) {
           styles.boton_añadir,
           { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 },
         ]}>
-        <Text style={styles.texto_boton_añadir}>AGREGAR</Text>
+        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
       </Pressable>
     </View>
   );
