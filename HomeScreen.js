@@ -27,15 +27,20 @@ export default function Home({ navigation }) {
         style={({ pressed }) => [ 
             styles.botones_principal,
             {
-              backgroundColor: pressed ? '#0c7744' : '#78e0af', 
+              backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42', 
               flexDirection: 'row',
               justifyContent: 'space-between',
               alignItems: 'center',
               paddingHorizontal: 25,
             }
         ]}>
-        <Text style={styles.textobotones_home}>¡Agrega un Cultivo!</Text>
-        <Icon name="plus" size={24} color="#136c42" />
+        {({ pressed }) => (
+          <>
+            <Text style={[styles.textobotones_home, { color: pressed ? "#78e0af" : '#fff' }]}>¡Agrega un Cultivo!</Text>
+            <Icon name="plus" size={24} color={pressed ? "#78e0af" : '#136c42' } />
+          </>
+        )}
       </Pressable>
 
       <Pressable
@@ -43,15 +48,20 @@ export default function Home({ navigation }) {
         style={({ pressed }) => [ 
             styles.botones_principal,
             {
-              backgroundColor: pressed ? '#0c7744' : '#78e0af', 
+              backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42', 
               flexDirection: 'row',
               justifyContent: 'space-between',
               alignItems: 'center',
               paddingHorizontal: 25,
             }
         ]}>
-        <Text style={styles.textobotones_home}>¡Agrega un Cultivo!</Text>
-        <Icon name="plus" size={24} color="#136c42" />
+        {({ pressed }) => (
+          <>
+            <Text style={[styles.textobotones_home, { color: pressed ? "#78e0af" : '#fff' }]}>¡Agrega un Cultivo!</Text>
+            <Icon name="plus" size={24} color={pressed ? "#78e0af" : '#136c42' } />
+          </>
+        )}
       </Pressable>
 
       <Pressable
@@ -59,15 +69,20 @@ export default function Home({ navigation }) {
         style={({ pressed }) => [
             styles.botones_principal,
             {
-              backgroundColor: pressed ? '#0c7744' : '#78e0af', 
+              backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42', 
               flexDirection: 'row',
               justifyContent: 'space-between',
               alignItems: 'center',
               paddingHorizontal: 25,
             }
         ]}>
-        <Text style={styles.textobotones_home}>¡Agrega un Cultivo!</Text>
-        <Icon name="plus" size={24} color="#136c42" />
+        {({ pressed }) => (
+          <>
+            <Text style={[styles.textobotones_home, { color: pressed ? "#78e0af" : '#fff' }]}>¡Agrega un Cultivo!</Text>
+            <Icon name="plus" size={24} color={pressed ? "#78e0af" : '#136c42' } />
+          </>
+        )}
       </Pressable>
     </View>
   );
