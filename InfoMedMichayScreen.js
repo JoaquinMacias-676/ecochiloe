@@ -38,7 +38,7 @@ export default function InfoMichay({ navigation }) {
       </Pressable>
 
       <View style={[styles.cuadro_de_texto, { height: 440 }]}>
-        <Text style={styles.titulo}>Michay (Berberis spp.)</Text>
+        <Text style={styles.titulo}>Michay (Berberis darwinii)</Text>
 
         <Text style={styles.subtitulo}>¿Cómo se planta?</Text>
         <Text style={styles.texto}>
@@ -58,8 +58,8 @@ export default function InfoMichay({ navigation }) {
         </Text>
 
         <Image
-          source={{ uri: 'https://cdn.portalfruticola.com/2019/10/52589881-tumblr_pa2s2exgir1qz4m9to1_1280.jpg' }}
-          style={[styles.imagen, { top: 270, left: 180 }]}
+          source={{ uri: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmJWEfDAQ4ZqgVBhPUwKJbVa0OVb-frznM9julhO8tWwC20wou3nXvpE9_l5se612TvYtubqmoqRkBUREQ5ivPKHV-GRB4Effjg3cVpHFht2m8nE2RwJmTTxWPGgtrNjEbfO6_8nnN_tA/s1600/DSC_0177.JPG' }}
+          style={[styles.imagen, { top: 260, left: 180, width: 100, height: 100 }]}
         />
 
         <Text style={styles.subtitulo}>Riesgos a tener en cuenta</Text>
