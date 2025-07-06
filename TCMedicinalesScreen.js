@@ -68,8 +68,8 @@ export default function Cereales({ navigation }) {
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.icono_texto}>Matico</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')}
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/matico.png')}
+                        style={[styles.cultivos_iconos, { top: -15 }]} />
                 </Pressable>
 
                 <Pressable
@@ -79,8 +79,8 @@ export default function Cereales({ navigation }) {
                         { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
                     <Text style={styles.icono_texto}>Michay</Text>
                     <Image
-                        source={require('./assets/ecochiloe_logo.png')} 
-                        style={styles.cultivos_iconos} />
+                        source={require('./assets/michay.png')} 
+                        style={[styles.cultivos_iconos, { top: -10 }]} />
                 </Pressable>
             </View>  
         </View>
