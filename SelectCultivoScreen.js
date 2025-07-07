@@ -40,7 +40,10 @@ export default function SeleccionCultivo({ navigation }) {
         onPress={() => navigation.navigate('Tuberculos')}
         style={({ pressed }) => [ 
             styles.botones_tipo_cultivo,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }
+            { backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42',
+              marginTop: 50
+            }
         ]}>
         <Text style={styles.texto_selec_cultivos}>Tubérculos</Text>
       </Pressable>
@@ -48,8 +51,10 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Hortalizas')}
         style={({ pressed }) => [ 
-            styles.botones_tipo_cultivo,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
+            styles.botones_tipo_cultivo, { 
+              backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42'
+            }
         ]}>
         <Text style={styles.texto_selec_cultivos}>Hortalizas</Text>
       </Pressable>
@@ -57,8 +62,10 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Frutas')}
         style={({ pressed }) => [ 
-            styles.botones_tipo_cultivo,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
+            styles.botones_tipo_cultivo, { 
+              backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42'
+            }
         ]}>
         <Text style={styles.texto_selec_cultivos}>Frutas</Text>
       </Pressable>
@@ -66,8 +73,10 @@ export default function SeleccionCultivo({ navigation }) {
       <Pressable
         onPress={() => navigation.navigate('Medicinales')}
         style={({ pressed }) => [ 
-            styles.botones_tipo_cultivo,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af' }
+            styles.botones_tipo_cultivo, { 
+              backgroundColor: pressed ? '#0c7744' : '#78e0af',
+              borderColor: pressed ? '#78e0af' : '#136c42'
+            }
         ]}>
         <Text style={styles.texto_selec_cultivos}>Medicinales</Text>
       </Pressable>
