@@ -39,8 +39,11 @@ export default function Frutas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoChilco')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Chilco</Text>
                     <Image 
                         source={require('./assets/chilco.png')}
@@ -50,8 +53,11 @@ export default function Frutas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoFrutilla')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Frutilla Blanca</Text>
                     <Image
                         source={require('./assets/frutilla_blanca.png')}
@@ -63,8 +69,11 @@ export default function Frutas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoMurta')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Murta</Text>
                     <Image
                         source={require('./assets/murta.png')}
@@ -74,8 +83,11 @@ export default function Frutas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoZarzaparrilla')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Zarzaparrilla</Text>
                     <Image
                         source={require('./assets/zarzaparrilla.png')} 
