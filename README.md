@@ -3,7 +3,7 @@
 
 <p align="left">
    <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
-   <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" alt="JavaScript"/>
 
 
 
@@ -46,8 +46,7 @@ La estructura del proyecto es la siguiente:
 **General**
 
 Desarrollar una aplicación móvil educativa e interactiva que funcione como guía práctica
-de siembra y cultivo enfocada para niños y niñas de aducación básica y personas que de-
-sean aprender sobre la agricultura de la isla de Chiloé, con el fin de fomentar el aprendizaje
+de siembra y cultivo enfocada para niños y niñas de aducación básica y personas que desean aprender sobre la agricultura de la isla de Chiloé, con el fin de fomentar el aprendizaje
 agrícola, la auto-sustentabilidad y el vínculo con el medio ambiente.
 
 
