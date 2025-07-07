@@ -29,14 +29,14 @@ export const styles = StyleSheet.create({
     borderColor: '#ebebeb',
   },
 
-// Estilo para el cuadro de "Inicia de sesión"
+// Estilo para el cuadro de "Inicia de sesión" y "Regístrate aquí"
   container_gris: {
     width: '100%',
     height: 45,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ebebeb',
-    marginTop: 50,
+    marginTop: 130,
   },
 
 // Texto grande para "Títulos"
