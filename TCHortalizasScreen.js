@@ -40,8 +40,11 @@ export default function Hortalizas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoAjo')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Ajo Chilote</Text>
                     <Image 
                         source={require('./assets/ajo_chilote.png')}
@@ -52,8 +55,11 @@ export default function Hortalizas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoLechuga')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Lechuga Criolla Chilota</Text>
                     <Image
                         source={require('./assets/lechuga.png')}
@@ -65,8 +71,11 @@ export default function Hortalizas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoMaqui')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Maqui</Text>
                     <Image
                         source={require('./assets/maqui.png')}
@@ -76,8 +85,11 @@ export default function Hortalizas({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoNalca')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Nalca</Text>
                     <Image
                         source={require('./assets/nalca.png')} 

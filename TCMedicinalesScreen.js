@@ -40,8 +40,11 @@ export default function Cereales({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoArrayan')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Arrayán</Text>
                     <Image 
                         source={require('./assets/arrayan.png')}
@@ -51,8 +54,11 @@ export default function Cereales({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoCanelo')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Canelo</Text>
                     <Image
                         source={require('./assets/canelo.png')}
@@ -64,8 +70,11 @@ export default function Cereales({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoMatico')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Matico</Text>
                     <Image
                         source={require('./assets/matico.png')}
@@ -75,8 +84,11 @@ export default function Cereales({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoMichay')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Michay</Text>
                     <Image
                         source={require('./assets/michay.png')} 

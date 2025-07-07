@@ -40,8 +40,11 @@ export default function Tuberculos({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoPapaBruja')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Papa Bruja</Text>
                     <Image 
                         source={require('./assets/papa_bruja.png')}
@@ -52,8 +55,11 @@ export default function Tuberculos({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoPapaRoja')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Papa Roja</Text>
                     <Image
                         source={require('./assets/papa_roja.png')}
@@ -65,8 +71,11 @@ export default function Tuberculos({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoPapaClavelaOjona')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Papa Clavela Ojona</Text>
                     <Image
                         source={require('./assets/papa_clavela_ojona.png')}
@@ -76,8 +85,11 @@ export default function Tuberculos({ navigation }) {
                 <Pressable
                     onPress={() => navigation.navigate('InfoPapaCachoDeToro')}
                     style={({ pressed }) => [ 
-                        styles.botones_clasificacion_cultivos,
-                        { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 50 }]}>
+                        styles.botones_clasificacion_cultivos, {
+                            backgroundColor: pressed ? '#0c7744' : '#78e0af',
+                            borderColor: pressed ? '#78e0af' : '#136c42',
+                            marginTop: 50
+                        }]}>
                     <Text style={styles.icono_texto}>Papa Cacho de Toro</Text>
                     <Image
                         source={require('./assets/papa_cacho_de_toro.png')} 
