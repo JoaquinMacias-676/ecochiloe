@@ -45,7 +45,9 @@ export default function SeleccionCultivo({ navigation }) {
               marginTop: 50
             }
         ]}>
-        <Text style={styles.texto_selec_cultivos}>Tubérculos</Text>
+        {({ pressed }) => (
+          <Text style={[styles.texto_selec_cultivos, { color: pressed ? "#78e0af" : '#fff' }]}>Tubérculos</Text>
+        )}
       </Pressable>
 
       <Pressable
@@ -56,7 +58,9 @@ export default function SeleccionCultivo({ navigation }) {
               borderColor: pressed ? '#78e0af' : '#136c42'
             }
         ]}>
-        <Text style={styles.texto_selec_cultivos}>Hortalizas</Text>
+        {({ pressed }) => (
+          <Text style={[styles.texto_selec_cultivos, { color: pressed ? "#78e0af" : '#fff' }]}>Hortalizas</Text>
+        )}
       </Pressable>
 
       <Pressable
@@ -67,7 +71,9 @@ export default function SeleccionCultivo({ navigation }) {
               borderColor: pressed ? '#78e0af' : '#136c42'
             }
         ]}>
-        <Text style={styles.texto_selec_cultivos}>Frutas</Text>
+        {({ pressed }) => (
+          <Text style={[styles.texto_selec_cultivos, { color: pressed ? "#78e0af" : '#fff' }]}>Frutas</Text>
+        )}
       </Pressable>
 
       <Pressable
@@ -78,7 +84,9 @@ export default function SeleccionCultivo({ navigation }) {
               borderColor: pressed ? '#78e0af' : '#136c42'
             }
         ]}>
-        <Text style={styles.texto_selec_cultivos}>Medicinales</Text>
+        {({ pressed }) => (
+          <Text style={[styles.texto_selec_cultivos, { color: pressed ? "#78e0af" : '#fff' }]}>Medicinales</Text>
+        )}
       </Pressable>
     </View>
   );
