@@ -1,4 +1,4 @@
-# App Movil Siembra y Cultivo (EcoChiloé) 
+# App Móvil Siembra y Cultivo (EcoChiloé) 
 
 
 <p align="left">
