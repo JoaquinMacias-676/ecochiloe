@@ -1,9 +1,21 @@
-import { Text, View, Pressable, ActivityIndicator } from 'react-native';
-import { styles } from './styles';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import React, { useState } from 'react';
+import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
+import { styles } from './styles_home';
 import { useFonts } from 'expo-font';
 
 export default function Home({ navigation }) { 
+  const [expanded1, setExpanded1] = useState(false);
+  const [expanded2, setExpanded2] = useState(false);
+  const [expanded3, setExpanded3] = useState(false);
+  const [expanded4, setExpanded4] = useState(false);
+
+  const handlePress = () => {
+    setExpanded1(!expanded1);
+    setExpanded2(!expanded2);
+    setExpanded3(!expanded3);
+    setExpanded4(!expanded4);
+  };
+
   const [fontsLoaded] = useFonts({
     'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
   });
@@ -19,71 +31,53 @@ export default function Home({ navigation }) {
   return (
     <View style={[styles.container, { paddingTop: 120 }]}>
 
-      <Text style={styles.textocolor}>MIS CULTIVOS</Text>
-      <Text style={styles.textocolor_contador}>0/3</Text>
+      <Text style={styles.textocolor}>CULTIVOS</Text>
       
-      <Pressable
-        onPress={() => navigation.navigate('SeleccionCultivo')}
-        style={({ pressed }) => [ 
-            styles.botones_principal,
-            {
-              backgroundColor: pressed ? '#0c7744' : '#78e0af',
-              borderColor: pressed ? '#78e0af' : '#136c42', 
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              paddingHorizontal: 25,
-            }
-        ]}>
-        {({ pressed }) => (
-          <>
-            <Text style={[styles.textobotones_home, { color: pressed ? "#78e0af" : '#fff' }]}>¡Agrega un Cultivo!</Text>
-            <Icon name="plus" size={24} color={pressed ? "#78e0af" : '#136c42' } />
-          </>
-        )}
-      </Pressable>
+      <View style={styles.botones_horizontal_cultivos}>
+        <Pressable
+          onPress={() => setExpanded1(!expanded1)}
+          style={expanded1 ? styles.botones_grande : styles.botones_pequeño}
+        >
+          {expanded1 && <Text style={styles.texto_boton}>Tubérculos</Text>}
 
-      <Pressable
-        onPress={() => navigation.navigate('SeleccionCultivo')}
-        style={({ pressed }) => [ 
-            styles.botones_principal,
-            {
-              backgroundColor: pressed ? '#0c7744' : '#78e0af',
-              borderColor: pressed ? '#78e0af' : '#136c42', 
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              paddingHorizontal: 25,
-            }
-        ]}>
-        {({ pressed }) => (
-          <>
-            <Text style={[styles.textobotones_home, { color: pressed ? "#78e0af" : '#fff' }]}>¡Agrega un Cultivo!</Text>
-            <Icon name="plus" size={24} color={pressed ? "#78e0af" : '#136c42' } />
-          </>
-        )}
-      </Pressable>
+          <Image
+            source={require('./assets/tuberculos.png')}
+            style={expanded1 ? styles.icono_grande : styles.icono_pequeño}
+            resizeMode="cover"
+          />
 
-      <Pressable
-        onPress={() => navigation.navigate('SeleccionCultivo')}
-        style={({ pressed }) => [
-            styles.botones_principal,
-            {
-              backgroundColor: pressed ? '#0c7744' : '#78e0af',
-              borderColor: pressed ? '#78e0af' : '#136c42', 
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              paddingHorizontal: 25,
-            }
-        ]}>
-        {({ pressed }) => (
-          <>
-            <Text style={[styles.textobotones_home, { color: pressed ? "#78e0af" : '#fff' }]}>¡Agrega un Cultivo!</Text>
-            <Icon name="plus" size={24} color={pressed ? "#78e0af" : '#136c42' } />
-          </>
-        )}
-      </Pressable>
+          {expanded1 && (
+            <Pressable
+              style={styles.boton_ir}
+              onPress={() => navigation.navigate('Tuberculos')}
+            >
+              <Text style={[styles.texto_boton, { fontSize: 18 }]}>Ir</Text>
+            </Pressable>
+          )}
+        </Pressable>
+
+        <Pressable
+          onPress={() => setExpanded2(!expanded2)}
+          style={expanded2 ? styles.botones_grande : styles.botones_pequeño}
+        >
+          {expanded2 && <Text style={styles.texto_boton}>Hortalizas</Text>}
+
+          <Image
+            source={require('./assets/hortalizas.png')}
+            style={expanded2 ? styles.icono_grande : styles.icono_pequeño}
+            resizeMode="cover"
+          />
+
+          {expanded2 && (
+            <Pressable
+              style={styles.boton_ir}
+              onPress={() => navigation.navigate('Hortalizas')}
+            >
+              <Text style={[styles.texto_boton, { fontSize: 18 }]}>Ir</Text>
+            </Pressable>
+          )}
+        </Pressable>
+      </View>
     </View>
   );
 }
