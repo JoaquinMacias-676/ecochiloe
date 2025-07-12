@@ -104,7 +104,7 @@ export default function Home({ navigation }) {
           {expanded4 && <Text style={styles.texto_boton}>Medicinales</Text>}
 
           <Image
-            source={require('./assets/hortalizas.png')}
+            source={require('./assets/medicinales.png')}
             style={expanded4 ? styles.icono_pequeño : styles.icono_grande}
             resizeMode="cover"
           />
