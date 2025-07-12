@@ -1,23 +1,23 @@
 {
   "expo": {
-    "name": "ecochiloe1_app",
+    "name": "EcoChiloé",
     "slug": "ecochiloe1_app",
     "version": "1.0.0",
+    "icon": "./assets/ecochiloe_logo.png",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/ecochiloe_logo3.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#fff"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/ecochiloe_logo3.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
