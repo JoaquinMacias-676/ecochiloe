@@ -10,6 +10,22 @@ export const styles = StyleSheet.create({
     paddingTop: 150,
   },
 
+// Estilo Logo Login
+  logo_estilo: {
+    marginVertical: -50,
+    width: 260,
+    height: 260,
+    resizeMode: 'contain',
+  },
+
+// Estilo para el texto de bienvenida
+  bienvenida_texto: {
+    fontSize: 15,
+    color: '#00000',
+    fontFamily: 'Roboto Condensed Bold',
+    fontWeight: '900',
+  },
+
 // Estilo para el título "Mis Cultivos"
   textocolor: {
     fontFamily: 'Baloo 2 Bold',
@@ -23,10 +39,10 @@ export const styles = StyleSheet.create({
 // Estilo para los botones de la pantalla principal
   botones_pequeño: {
     marginVertical: 30,
-    marginHorizontal: 20,
-    width: 110,
-    height: 110, 
-    borderRadius: 16, 
+    marginHorizontal: 15,
+    width: 140,
+    height: 140, 
+    borderRadius: 100, 
     borderWidth: 2,
     justifyContent: 'center',
     alignItems: 'center',
@@ -37,7 +53,7 @@ export const styles = StyleSheet.create({
 // Estilo para los botones de la pantalla principal
   botones_grande: {
     marginVertical: 30,
-    marginHorizontal: 20,
+    marginHorizontal: 15,
     width: 140,
     height: 140, 
     borderRadius: 16, 
@@ -53,14 +69,14 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
 
-// Icono pequeño
-  icono_pequeño: {
-    width: 100,
-    height: 100,
-  },
-
 // Icono Grande
   icono_grande: {
+    width: 110,
+    height: 110,
+  },
+
+// Icono Pequeño
+  icono_pequeño: {
     width: 90,
     height: 90,
     top: 15,
@@ -91,5 +107,28 @@ export const styles = StyleSheet.create({
     height: 30,
     alignItems: 'center',
     marginTop: 15,
+  },
+
+// Contorno tutorial
+  contorno_tutorial: {
+    height: 60,
+    width: 280,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: '#0c7744',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+
+// Texto Tutorial
+
+  texto_tutorial: {
+    fontFamily: 'Roboto Bold',
+    fontSize: 18,
+    color: '#000',
+    textAlign: 'center',
+
   }
 });
