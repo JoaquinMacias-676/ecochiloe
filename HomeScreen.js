@@ -77,7 +77,55 @@ export default function Home({ navigation }) {
             </Pressable>
           )}
         </Pressable>
+
       </View>
+
+      <View style={styles.botones_horizontal_cultivos}>
+        <Pressable
+          onPress={() => setExpanded3(!expanded3)}
+          style={expanded3 ? styles.botones_grande : styles.botones_pequeño}
+        >
+          {expanded3 && <Text style={styles.texto_boton}>Frutas</Text>}
+
+          <Image
+            source={require('./assets/frutas.png')}
+            style={expanded3 ? styles.icono_grande : styles.icono_pequeño}
+            resizeMode="cover"
+          />
+
+          {expanded3 && (
+            <Pressable
+              style={styles.boton_ir}
+              onPress={() => navigation.navigate('Frutas')}
+            >
+              <Text style={[styles.texto_boton, { fontSize: 18 }]}>Ir</Text>
+            </Pressable>
+          )}
+        </Pressable>
+
+        <Pressable
+          onPress={() => setExpanded4(!expanded4)}
+          style={expanded4 ? styles.botones_grande : styles.botones_pequeño}
+        >
+          {expanded4 && <Text style={styles.texto_boton}>Medicinales</Text>}
+
+          <Image
+            source={require('./assets/hortalizas.png')}
+            style={expanded4 ? styles.icono_grande : styles.icono_pequeño}
+            resizeMode="cover"
+          />
+
+          {expanded4 && (
+            <Pressable
+              style={styles.boton_ir}
+              onPress={() => navigation.navigate('Medicinales')}
+            >
+              <Text style={[styles.texto_boton, { fontSize: 18 }]}>Ir</Text>
+            </Pressable>
+          )}
+        </Pressable>
+      </View>
+
     </View>
   );
 }
