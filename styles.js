@@ -51,26 +51,17 @@ export const styles = StyleSheet.create({
     textShadowRadius: 6,
   },
 
-// Estilo para el contador de cultivos en la pantalla principal
-  textocolor_contador: {
-    fontSize: 20,
-    color: 'white',
-    fontFamily: 'Baloo 2 Bold',
-    textShadowColor: 'black',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 6,
-  },  
-
 // Estilo para los botones de la pantalla principal
   botones_principal: {
-    marginVertical: 16, 
-    width: 250,
-    height: 125, 
+    marginVertical: 20,
+    marginHorizontal: 30,
+    width: 100,
+    height: 100, 
     borderRadius: 16, 
     borderWidth: 2,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#0c7744', 
+    borderColor: '#0c7744',
   },
 
 // Estilo para los botones de selección y busqueda de cultivos
