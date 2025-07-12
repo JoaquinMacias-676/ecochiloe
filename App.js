@@ -12,9 +12,8 @@ import FechaNacimientoScreen from './CrearCFechaNacimientoScreen';
 import IniciarSesionScreen from './IniciarSesionScreen';
 import IniciarSesionContraseñaScreen from './IniciarSesionContraseñaScreen';
 
-// Importando interfaces
+// Importando interfaces principales
 import HomeScreen from './HomeScreen';
-import SelectCultivoScreen from './SelectCultivoScreen';
 import TuberculosScreen from './TCTuberculosScreen';
 import HortalizasScreen from './TCHortalizasScreen';
 import FrutasScreen from './TCFrutasScreen';
@@ -58,7 +57,6 @@ export default function App() {
         <Stack.Screen name='IniciarSesion' component={IniciarSesionScreen} />
         <Stack.Screen name='IniciarSesionContraseña' component={IniciarSesionContraseñaScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="SeleccionCultivo" component={SelectCultivoScreen} />
         <Stack.Screen name="Tuberculos" component={TuberculosScreen} />
         <Stack.Screen name='Hortalizas' component={HortalizasScreen}/>
         <Stack.Screen name='Frutas' component={FrutasScreen} />
