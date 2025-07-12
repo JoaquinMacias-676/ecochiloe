@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
 
 // Estilo para los botones de la pantalla principal
   botones_pequeño: {
-    marginVertical: 50,
+    marginVertical: 30,
     marginHorizontal: 20,
     width: 110,
     height: 110, 
@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
 
 // Estilo para los botones de la pantalla principal
   botones_grande: {
-    marginVertical: 50,
+    marginVertical: 30,
     marginHorizontal: 20,
     width: 140,
     height: 140, 
