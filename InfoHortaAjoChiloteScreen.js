@@ -73,13 +73,6 @@ export default function InfoAjo({ navigation }) {
         <Text style={styles.texto}>Se cosecha a los 6-8 meses, cuando las hojas comienzan a secarse.</Text>
       </View>
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.boton_añadir,
-          { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 },
-        ]}>
-        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
-      </Pressable>
     </View>
   );
 }

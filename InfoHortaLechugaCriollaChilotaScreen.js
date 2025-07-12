@@ -71,13 +71,6 @@ export default function InfoLechuga({ navigation }) {
         <Text style={styles.texto}>Se cosecha en 60-70 días,{"\n"}cuando las hojas están grandes.</Text>
       </View>
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.boton_añadir,
-          { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 },
-        ]}>
-        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
-      </Pressable>
     </View>
   );
 }

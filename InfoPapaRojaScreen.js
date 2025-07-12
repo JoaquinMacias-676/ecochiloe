@@ -68,13 +68,7 @@ export default function InfoPapaRoja({ navigation }) {
         <Text style={styles.subtitulo}>Cosecha</Text>
         <Text style={styles.texto}>Se cosecha a los 3 o 4 meses, cuando la planta se seca en la parte de arriba.</Text>
       </View>
-
-      <Pressable
-        style={({ pressed }) => [ 
-            styles.boton_añadir,
-            { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 }]}>
-        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
-      </Pressable>
+      
     </View>
   );
 }

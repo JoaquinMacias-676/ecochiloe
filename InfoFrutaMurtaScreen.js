@@ -72,13 +72,6 @@ export default function InfoMurta({ navigation }) {
         <Text style={styles.texto}>Se cosecha en verano, entre enero y febrero, cuando los frutos están maduros y de color rojo o morado.</Text>
       </View>
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.boton_añadir,
-          { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 },
-        ]}>
-        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
-      </Pressable>
     </View>
   );
 }

@@ -71,13 +71,6 @@ export default function InfoFrutilla({ navigation }) {
         <Text style={styles.texto}>A los 3-4 meses, cuando el fruto{"\n"}está blanco con tono rosado y aromático.</Text>
       </View>
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.boton_añadir,
-          { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 },
-        ]}>
-        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
-      </Pressable>
     </View>
   );
 }

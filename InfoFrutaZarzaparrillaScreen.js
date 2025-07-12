@@ -70,13 +70,6 @@ export default function InfoZarzaparrilla({ navigation }) {
         <Text style={styles.texto}>En verano, cuando da pequeñas{"\n"}bayas oscuras (También se puede usar su raíz).</Text>
       </View>
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.boton_añadir,
-          { backgroundColor: pressed ? '#0c7744' : '#78e0af', marginTop: 20 },
-        ]}>
-        <Text style={styles.texto_boton_añadir}>AÑADIR</Text>
-      </Pressable>
     </View>
   );
 }
