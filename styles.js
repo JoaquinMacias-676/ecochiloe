@@ -8,14 +8,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 150,
   },
-
-// Estilo contenedor de "Mis cultivos"
-  container_contorno: {
-    position: 'relative',
-    marginTop: -10,
-    marginBottom: 20,
-    marginRight: 150,
-  },
   
 // Estilo para el título que describe la pantalla
   titulo_interfaz: {
@@ -49,31 +41,6 @@ export const styles = StyleSheet.create({
     textShadowColor: 'black',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 6,
-  },
-
-// Estilo para los botones de la pantalla principal
-  botones_principal: {
-    marginVertical: 20,
-    marginHorizontal: 30,
-    width: 100,
-    height: 100, 
-    borderRadius: 16, 
-    borderWidth: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderColor: '#0c7744',
-  },
-
-// Estilo para los botones de selección y busqueda de cultivos
-  botones_tipo_cultivo: {
-    marginVertical: 10, 
-    width: 288,
-    height: 85, 
-    borderRadius: 16, 
-    borderWidth: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderColor: '#0c7744', 
   },
 
 // Estilo para el texto de los botones de la pantalla principal
