@@ -22,7 +22,7 @@ export default function Hortalizas({ navigation }) {
             <Text style={styles.titulo_interfaz}>HORTALIZAS</Text>
 
             <Pressable
-                onPress={() => navigation.navigate('SeleccionCultivo')}
+                onPress={() => navigation.navigate('Home')}
                 style={{
                     position: 'absolute',
                     top: 120,

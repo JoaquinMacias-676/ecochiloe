@@ -21,7 +21,7 @@ export default function Frutas({ navigation }) {
             <Text style={styles.titulo_interfaz}>FRUTAS</Text>
             
             <Pressable
-                onPress={() => navigation.navigate('SeleccionCultivo')}
+                onPress={() => navigation.navigate('Home')}
                 style={{
                     position: 'absolute',
                     top: 120,
