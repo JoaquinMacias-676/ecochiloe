@@ -12,7 +12,7 @@ export default function CrearCuenta({ navigation }) {
     'Roboto Regular': require('./assets/fonts/Roboto-Regular.ttf'),
   });
 
-  const [email, setEmail] = useState(''); // Estado para almacenar el correo electrónico
+  const [email, setEmail] = useState('');
 
   if (!fontsLoaded) {
     return (
@@ -22,28 +22,23 @@ export default function CrearCuenta({ navigation }) {
     );
   }
 
-  // Función para guardar el correo en un archivo JSON
   const guardarCorreo = async () => {
     try {
-      // Obtenemos la ruta donde queremos guardar el archivo
+
       const fileUri = FileSystem.documentDirectory + 'cuentas.json';
 
-      // Intenta leer el archivo si ya existe
       let existingData = [];
       try {
         const fileContents = await FileSystem.readAsStringAsync(fileUri);
-        existingData = JSON.parse(fileContents); // Convertimos el archivo JSON en objeto
+        existingData = JSON.parse(fileContents);
       } catch (error) {
         console.log("Archivo no encontrado, creando uno nuevo.");
       }
 
-      // Agregamos el nuevo correo al array de correos
       existingData.push({ correo: email });
 
-      // Guardamos el archivo JSON con los nuevos datos
       await FileSystem.writeAsStringAsync(fileUri, JSON.stringify(existingData));
 
-      // Navega a la siguiente pantalla
       navigation.navigate('CrearContraseña');
     } catch (error) {
       console.error('Error al guardar el correo:', error);
@@ -61,19 +56,22 @@ export default function CrearCuenta({ navigation }) {
 
         <Text style={styles.texto_normal}>Por medio de un correo electrónico</Text>
 
-        {/* TextInput para que el usuario ingrese el correo */}
+        <View style={[styles.botones, { flexDirection: 'row', paddingHorizontal: 15 }]}>
+
+        <Icon name='envelope' size={24} color='#d7d7d7' />
+
         <TextInput
-          style={[styles.botones, { flexDirection: 'row' }]}
+          style={{ flex: 1, textAlign: 'center' }}
           placeholder="Ingrese un correo electrónico"
-          placeholderTextColor="#d7d7d7"
           keyboardType="email-address"
           onChangeText={setEmail}
           value={email}
         />
+        </View>
 
         <Pressable
           style={[styles.botones, { backgroundColor: '#000', borderColor: '#000' }]}
-          onPress={guardarCorreo} // Guardamos el correo al presionar continuar
+          onPress={guardarCorreo}
         >
           <Text style={[styles.texto_normal, { color: '#fff' }]}>Continuar</Text>
         </Pressable>
