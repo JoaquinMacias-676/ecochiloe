@@ -9,15 +9,9 @@ export default function Home({ navigation }) {
   const [expanded3, setExpanded3] = useState(false);
   const [expanded4, setExpanded4] = useState(false);
 
-  const handlePress = () => {
-    setExpanded1(!expanded1);
-    setExpanded2(!expanded2);
-    setExpanded3(!expanded3);
-    setExpanded4(!expanded4);
-  };
-
   const [fontsLoaded] = useFonts({
     'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Bold': require('./assets/fonts/Roboto-Bold.ttf'),
   });
 
   if (!fontsLoaded) {
@@ -29,10 +23,10 @@ export default function Home({ navigation }) {
   }
 
   return (
-    <View style={[styles.container, { paddingTop: 120 }]}>
+    <View style={[styles.container, { paddingTop: 140 }]}>
 
       <Text style={styles.textocolor}>CULTIVOS</Text>
-      
+
       <View style={styles.botones_horizontal_cultivos}>
         <Pressable
           onPress={() => setExpanded1(!expanded1)}
@@ -42,7 +36,7 @@ export default function Home({ navigation }) {
 
           <Image
             source={require('./assets/tuberculos.png')}
-            style={expanded1 ? styles.icono_grande : styles.icono_pequeño}
+            style={expanded1 ? styles.icono_pequeño : styles.icono_grande}
             resizeMode="cover"
           />
 
@@ -64,7 +58,7 @@ export default function Home({ navigation }) {
 
           <Image
             source={require('./assets/hortalizas.png')}
-            style={expanded2 ? styles.icono_grande : styles.icono_pequeño}
+            style={expanded2 ? styles.icono_pequeño : styles.icono_grande}
             resizeMode="cover"
           />
 
@@ -89,7 +83,7 @@ export default function Home({ navigation }) {
 
           <Image
             source={require('./assets/frutas.png')}
-            style={expanded3 ? styles.icono_grande : styles.icono_pequeño}
+            style={expanded3 ? styles.icono_pequeño : styles.icono_grande}
             resizeMode="cover"
           />
 
@@ -111,7 +105,7 @@ export default function Home({ navigation }) {
 
           <Image
             source={require('./assets/hortalizas.png')}
-            style={expanded4 ? styles.icono_grande : styles.icono_pequeño}
+            style={expanded4 ? styles.icono_pequeño : styles.icono_grande}
             resizeMode="cover"
           />
 
@@ -124,6 +118,10 @@ export default function Home({ navigation }) {
             </Pressable>
           )}
         </Pressable>
+      </View>
+      
+      <View style={styles.contorno_tutorial}>
+        <Text style={styles.texto_tutorial}>¡Selecciona un tipo de cultivo para seguir explorando!</Text>
       </View>
 
     </View>
