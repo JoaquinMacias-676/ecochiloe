@@ -22,17 +22,31 @@ export default function CrearCuenta({ navigation }) {
     );
   }
 
-  const guardarCorreo = async () => {
-    try {
+  const validarCorreo = (correo) => {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return regex.test(correo);
+  };
 
+  const guardarCorreo = async () => {
+
+    if (!email || !validarCorreo(email)) {
+      Alert.alert('Correo inválido', 'Por favor, ingresa un correo electrónico válido.');
+      return;
+    }
+
+    try {
       const fileUri = FileSystem.documentDirectory + 'cuentas.json';
 
       let existingData = [];
-      try {
+
+      const fileExists = await FileSystem.getInfoAsync(fileUri);
+      if (fileExists.exists) {
+
         const fileContents = await FileSystem.readAsStringAsync(fileUri);
         existingData = JSON.parse(fileContents);
-      } catch (error) {
-        console.log("Archivo no encontrado, creando uno nuevo.");
+      } else {
+
+        await FileSystem.writeAsStringAsync(fileUri, JSON.stringify([]));
       }
 
       existingData.push({ correo: email });
@@ -42,24 +56,21 @@ export default function CrearCuenta({ navigation }) {
       navigation.navigate('CrearContraseña');
     } catch (error) {
       console.error('Error al guardar el correo:', error);
+      Alert.alert('Error', 'Ocurrió un error al guardar el correo.');
     }
   };
 
-  return(
+  return (
     <View style={styles.container_blanco}>
+      <Image
+        source={require('./assets/ecochiloe_3.png')}
+        style={styles.logo_estilo}
+      />
+      <Text style={styles.texto_grande}>Crea una cuenta</Text>
+      <Text style={styles.texto_normal}>Por medio de un correo electrónico</Text>
 
-        <Image
-          source={require('./assets/ecochiloe_3.png')}
-          style={styles.logo_estilo} />
-
-        <Text style={styles.texto_grande}>Crea una cuenta</Text>
-
-        <Text style={styles.texto_normal}>Por medio de un correo electrónico</Text>
-
-        <View style={[styles.botones, { flexDirection: 'row', paddingHorizontal: 15 }]}>
-
+      <View style={[styles.botones, { flexDirection: 'row', paddingHorizontal: 15 }]}>
         <Icon name='envelope' size={24} color='#d7d7d7' />
-
         <TextInput
           style={{ flex: 1, textAlign: 'center' }}
           placeholder="Ingrese un correo electrónico"
@@ -67,24 +78,23 @@ export default function CrearCuenta({ navigation }) {
           onChangeText={setEmail}
           value={email}
         />
-        </View>
+      </View>
 
-        <Pressable
-          style={[styles.botones, { backgroundColor: '#000', borderColor: '#000' }]}
-          onPress={guardarCorreo}
-        >
-          <Text style={[styles.texto_normal, { color: '#fff' }]}>Continuar</Text>
-        </Pressable>
+      <Pressable
+        style={[styles.botones, { backgroundColor: '#000', borderColor: '#000' }]}
+        onPress={guardarCorreo}
+      >
+        <Text style={[styles.texto_normal, { color: '#fff' }]}>Continuar</Text>
+      </Pressable>
 
-        <View style={styles.container_gris}>
-
-          <Text style={styles.texto_normal}>¿Ya tienes una cuenta?{' '}
-            <Text style={[styles.texto_normal, { color: '#00bf63', textDecorationLine: 'underline', }]}
+      <View style={styles.container_gris}>
+        <Text style={styles.texto_normal}>
+          ¿Ya tienes una cuenta?{' '}
+          <Text
+            style={[styles.texto_normal, { color: '#00bf63', textDecorationLine: 'underline' }]}
             onPress={() => navigation.navigate('IniciarSesion')}>Inicia sesión</Text>
-          </Text>
-
-        </View>
-
+        </Text>
+      </View>
     </View>
-  );
+ );
 }
