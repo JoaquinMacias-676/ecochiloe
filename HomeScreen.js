@@ -9,12 +9,12 @@ export default function Home({ navigation }) {
   const [expanded3, setExpanded3] = useState(false);
   const [expanded4, setExpanded4] = useState(false);
 
-  const [fontsLoaded] = useFonts({
+  const [fuentesCargadas] = useFonts({
     'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
     'Roboto Bold': require('./assets/fonts/Roboto-Bold.ttf'),
   });
 
-  if (!fontsLoaded) {
+  if (!fuentesCargadas) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <ActivityIndicator size="large" color="#00bf63" />

@@ -4,17 +4,19 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
 
 export default function Frutas({ navigation }) {
-  const [fontsLoaded] = useFonts({
+  const [fuentesCargadas] = useFonts({
     'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Bold': require('./assets/fonts/Roboto-Bold.ttf'),
   });
 
-  if (!fontsLoaded) {
+  if (!fuentesCargadas) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <ActivityIndicator size="large" color="#00bf63" />
       </View>
     );
   }
+
     return (
         <View style={styles.container}>
 
@@ -47,7 +49,8 @@ export default function Frutas({ navigation }) {
                     <Text style={styles.icono_texto}>Chilco</Text>
                     <Image 
                         source={require('./assets/chilco.png')}
-                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]} />
+                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]}
+                    />
                 </Pressable>
 
                 <Pressable
@@ -61,7 +64,8 @@ export default function Frutas({ navigation }) {
                     <Text style={styles.icono_texto}>Frutilla Blanca</Text>
                     <Image
                         source={require('./assets/frutilla_blanca.png')}
-                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]} />
+                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]}
+                    />
                 </Pressable>
             </View>
 
@@ -77,7 +81,8 @@ export default function Frutas({ navigation }) {
                     <Text style={styles.icono_texto}>Murta</Text>
                     <Image
                         source={require('./assets/murta.png')}
-                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]} />
+                        style={[styles.cultivos_iconos, { width: 175, height: 175, top: -25}]}
+                    />
                 </Pressable>
 
                 <Pressable
@@ -91,7 +96,8 @@ export default function Frutas({ navigation }) {
                     <Text style={styles.icono_texto}>Zarzaparrilla</Text>
                     <Image
                         source={require('./assets/zarzaparrilla.png')} 
-                        style={[styles.cultivos_iconos, { top: -5 }]} />
+                        style={[styles.cultivos_iconos, { top: -5 }]}
+                    />
                 </Pressable>
             </View>  
         </View>
