@@ -124,6 +124,10 @@ export default function Home({ navigation }) {
         <Text style={styles.texto_tutorial}>¡Selecciona un tipo de cultivo para seguir explorando!</Text>
       </View>
 
+      <Pressable
+        onPress={() => navigation.navigate('IniciarSesion')}>
+        <Text>hola</Text>
+      </Pressable>
     </View>
   );
 }
