@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     width: 140,
     height: 140, 
     borderRadius: 100, 
-    borderWidth: 2,
+    borderWidth: 4,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#78e0af',

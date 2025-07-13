@@ -19,6 +19,7 @@ export const styles = StyleSheet.create({
     borderColor: '#000000',
     borderRadius: 10,
     backgroundColor: '#ffffff',
+    marginTop: 40,
   },
 
 // Estilo de Imagen
