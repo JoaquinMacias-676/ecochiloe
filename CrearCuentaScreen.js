@@ -34,6 +34,8 @@ export default function CrearCuenta({ navigation }) {
       return;
     }
 
+  const emailNormal = email.trim().toLowerCase();
+
     try {
       const fileUri = FileSystem.documentDirectory + 'cuentas.json';
 
@@ -49,9 +51,14 @@ export default function CrearCuenta({ navigation }) {
         await FileSystem.writeAsStringAsync(fileUri, JSON.stringify([]));
       }
 
-      existingData.push({ correo: email });
+    const correoExiste = existingData.some(item => item.correo.toLowerCase() === emailNormal);
+    if (correoExiste) {
+      Alert.alert('Correo ya registrado', 'Este correo ya ha sido registrado anteriormente.');
+      return;
+    }
 
-      await FileSystem.writeAsStringAsync(fileUri, JSON.stringify(existingData));
+    existingData.push({ correo: emailNormal });
+    await FileSystem.writeAsStringAsync(fileUri, JSON.stringify(existingData));
 
       navigation.navigate('CrearContraseña');
     } catch (error) {
