@@ -3,7 +3,7 @@ import { styles } from './styles_login';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
 
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import * as FileSystem from 'expo-file-system';
 
 export default function CrearCuentaContraseña({ navigation }) {
