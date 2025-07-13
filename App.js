@@ -10,7 +10,6 @@ import FechaNacimientoScreen from './CrearCFechaNacimientoScreen';
 
 // Importando interfaces de inicio de sesión
 import IniciarSesionScreen from './IniciarSesionScreen';
-import IniciarSesionContraseñaScreen from './IniciarSesionContraseñaScreen';
 
 // Importando interfaces principales
 import HomeScreen from './HomeScreen';
@@ -55,7 +54,6 @@ export default function App() {
         <Stack.Screen name='AgregarNombre' component={AgregarNombreScreen} />
         <Stack.Screen name='FechaNacimiento' component={FechaNacimientoScreen} />
         <Stack.Screen name='IniciarSesion' component={IniciarSesionScreen} />
-        <Stack.Screen name='IniciarSesionContraseña' component={IniciarSesionContraseñaScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Tuberculos" component={TuberculosScreen} />
         <Stack.Screen name='Hortalizas' component={HortalizasScreen}/>
