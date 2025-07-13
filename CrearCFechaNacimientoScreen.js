@@ -88,7 +88,7 @@ export default function FechaNacimiento({ navigation }) {
         <Text style={styles.texto_grande}>¿Cúando Nació?</Text>
 
         <Text style={styles.texto_normal}>Ingrese su fecha de nacimiento.</Text>
-        <Text style={styles.texto_normal}>Usando el siguiente formato Día/Mes/Año</Text>
+        <Text style={styles.texto_normal}>Usando el siguiente formato: Día/Mes/Año</Text>
 
         <View style={[styles.botones, { flexDirection: 'row', paddingHorizontal: 15, marginTop: 20 }]}>
           <Icon name='calendar' size={25} color='#d7d7d7' />
