@@ -1,13 +1,19 @@
-import { Text, View, Pressable, Image, ActivityIndicator } from 'react-native';
+import { Text, View, Pressable, Image, ActivityIndicator, TextInput, Alert } from 'react-native';
 import { styles } from './styles_login';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
+
+import Reacr, { useState } from 'react'
+import * as FileSystem from 'expo-file-system';
 
 export default function AgregarNombre({ navigation }) {
   const [fontsLoaded] = useFonts({
     'Roboto Bold': require('./assets/fonts/Roboto-Bold.ttf'),
     'Roboto Regular': require('./assets/fonts/Roboto-Regular.ttf'),
   });
+
+  const [nombre, setNombre] = useState('');
+  const [apellido, setApellido] = useState('');
 
   if (!fontsLoaded) {
     return (
@@ -16,6 +22,42 @@ export default function AgregarNombre({ navigation }) {
       </View>
     );
   }
+
+  const guardarNombreApellido = async () => {
+    if (!nombre.trim() || !apellido.trim()) {
+      Alert.alert('Campos incompletos', 'Por favor, ingrese su nombre y apellido.');
+      return;
+    }
+
+    try {
+      const fileUri = FileSystem.documentDirectory + 'cuentas.json';
+
+      const fileExists = await FileSystem.getInfoAsync(fileUri);
+      if (!fileExists.exists) {
+        Alert.alert('Error', 'No se encontró una cuenta para agregar el nombre.');
+        return;
+      }
+
+      const fileContents = await FileSystem.readAsStringAsync(fileUri);
+      const existingData = JSON.parse(fileContents);
+
+      if (existingData.length === 0) {
+        Alert.alert('Error', 'No hay datos de cuenta registrados.');
+        return;
+      }
+
+      const ultimaCuenta = existingData[existingData.length - 1];
+      ultimaCuenta.nombre = nombre;
+      ultimaCuenta.apellido = apellido;
+
+      await FileSystem.writeAsStringAsync(fileUri, JSON.stringify(existingData));
+
+      navigation.navigate('FechaNacimiento');
+    } catch (error) {
+      console.error('Error al guardar nombre y apellido:', error);
+      Alert.alert('Error', 'Ocurrió un error al guardar el nombre y apellido.');
+    }
+  };
 
   return(
     <View style={styles.container_blanco}>
@@ -41,18 +83,26 @@ export default function AgregarNombre({ navigation }) {
 
         <Text style={styles.texto_grande}>¿Cómo se llama?</Text>
 
-        <Text style={styles.texto_normal}>Ingrese su nombre, y si quiere su apellido</Text>
+        <Text style={styles.texto_normal}>Ingrese su nombre y su apellido</Text>
 
-        <Pressable style={[styles.botones, { marginTop: 20, flexDirection: 'row' }]}>
-          <Text style={styles.texto_normal}>Nombre</Text>
-        </Pressable>
+        <TextInput
+          style={[styles.botones, { marginTop: 20, flexDirection: 'row', textAlign: 'center' }]}
+          placeholder='Nombre'
+          value={nombre}
+          onChangeText={setNombre}
+        />
 
-        <Pressable style={[styles.botones, { marginTop: 20, flexDirection: 'row' }]}>
-          <Text style={styles.texto_normal}>Apellido (Opcional)</Text>
-        </Pressable>
+        <TextInput
+          style={[styles.botones, { marginTop: 10, flexDirection: 'row', textAlign: 'center' }]}
+          placeholder='Apellido'
+          value={apellido}
+          onChangeText={setApellido}
+        />
 
-        <Pressable style={[styles.botones, { backgroundColor: '#000', borderColor: '#000'}]}
-        onPress={() => navigation.navigate('FechaNacimiento')}>
+        <Pressable
+          style={[styles.botones, { backgroundColor: '#000', borderColor: '#000'}]}
+          onPress={guardarNombreApellido}
+        >
           <Text style={[styles.texto_normal, { color: '#fff'}]}>Continuar</Text> 
         </Pressable>
 
