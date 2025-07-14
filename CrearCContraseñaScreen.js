@@ -1,4 +1,4 @@
-import { Text, View, Pressable, Image, ActivityIndicator, TextInput, Alert } from 'react-native';
+import { Text, View, Pressable, TouchableOpacity, Image, ActivityIndicator, TextInput, Alert } from 'react-native';
 import { styles } from './styles_login';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
@@ -13,6 +13,7 @@ export default function CrearCuentaContraseña({ navigation }) {
   });
 
   const [password, setPassword] = useState('');
+  const [mostrarContraseña, setMostrarContraseña] = useState(false);
 
   if (!fontsLoaded) {
     return (
@@ -84,11 +85,18 @@ export default function CrearCuentaContraseña({ navigation }) {
         <Text style={styles.texto_normal}>Crea una contraseña para tu cuenta</Text>
 
         <View style={[styles.botones, { flexDirection: 'row', paddingHorizontal: 15 }]}>
-          <Icon name='lock' size={24} color='#d7d7d7' />
+          <TouchableOpacity onPress={() => setMostrarContraseña(!mostrarContraseña)}>
+            <Icon
+              name={mostrarContraseña ? 'eye' : 'eye-slash'}
+              size={24}
+              color="#d7d7d7"
+              style={{ marginRight: 10 }}
+            />
+          </TouchableOpacity>
           <TextInput
             style={{ flex: 1, textAlign: 'center' }}
             placeholder="Ingrese una contraseña"
-            secureTextEntry={true}
+            secureTextEntry={!mostrarContraseña}
             onChangeText={setPassword}
             value={password}
           />
