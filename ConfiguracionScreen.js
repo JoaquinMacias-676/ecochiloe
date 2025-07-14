@@ -1,6 +1,7 @@
 import { View, Text, Pressable, Alert } from 'react-native';
 import { styles } from './styles';
 import { FontAwesome5 } from '@expo/vector-icons';
+import { useFonts } from 'expo-font';
 
 import * as FileSystem from 'expo-file-system';
 
@@ -11,6 +12,11 @@ export default function Configuracion({ navigation }) {
       routes: [{ name: 'IniciarSesion' }],
     });
   };
+
+  const [fuentesCargadas] = useFonts({
+    'Baloo 2 Bold': require('./assets/fonts/Baloo2-Bold.ttf'),
+    'Roboto Regular': require('./assets/fonts/Roboto-Regular.ttf'),
+  });
 
 // Para eliminar todos los datos del json
 const eliminarTodosLosDatos = async () => {
