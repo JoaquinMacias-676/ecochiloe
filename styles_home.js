@@ -18,15 +18,7 @@ export const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 
-// Estilo para el texto de bienvenida
-  bienvenida_texto: {
-    fontSize: 15,
-    color: '#00000',
-    fontFamily: 'Roboto Condensed Bold',
-    fontWeight: '900',
-  },
-
-// Estilo para el título "Mis Cultivos"
+// Estilo para el título "Cultivos"
   textocolor: {
     fontFamily: 'Baloo 2 Bold',
     color: 'white',
