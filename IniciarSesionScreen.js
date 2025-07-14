@@ -47,7 +47,7 @@ export default function IniciarSesion({ navigation }) {
       );
 
       if (cuentaEncontrada) {
-        navigation.navigate('Home');
+        navigation.navigate('Tabs');
       } else {
         Alert.alert('Error', 'Correo o contraseña incorrectos.');
       }
