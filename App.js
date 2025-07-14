@@ -8,6 +8,9 @@ import CrearContraseñaScreen from './CrearCContraseñaScreen'
 import AgregarNombreScreen from './CrearCAgregarNombreScreen';
 import FechaNacimientoScreen from './CrearCFechaNacimientoScreen';
 
+// Importando Tab
+import Tabs from './Tabs';
+
 // Importando interfaces de inicio de sesión
 import IniciarSesionScreen from './IniciarSesionScreen';
 
@@ -42,6 +45,9 @@ import InfoPapaCachoDeToro from './InfoPapaCachoDeToroScreen';
 import InfoPapaClavelaOjona from './InfoPapaClavelaOjonaScreen'
 import InfoPapaRoja from './InfoPapaRojaScreen';
 
+// Importando interfaz de Configuración
+import Configuracion from './ConfiguracionScreen';
+
 const Stack = createNativeStackNavigator();
 
 // Creación de navegación de interfaces
@@ -49,11 +55,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name='IniciarSesion' component={IniciarSesionScreen} />
         <Stack.Screen name="CrearCuenta" component={CrearCuentaScreen} />
         <Stack.Screen name='CrearContraseña' component={CrearContraseñaScreen} />
         <Stack.Screen name='AgregarNombre' component={AgregarNombreScreen} />
         <Stack.Screen name='FechaNacimiento' component={FechaNacimientoScreen} />
-        <Stack.Screen name='IniciarSesion' component={IniciarSesionScreen} />
+        <Stack.Screen name='Tabs' component={Tabs} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Tuberculos" component={TuberculosScreen} />
         <Stack.Screen name='Hortalizas' component={HortalizasScreen}/>
@@ -75,6 +82,7 @@ export default function App() {
         <Stack.Screen name='InfoPapaCachoDeToro' component={InfoPapaCachoDeToro} />
         <Stack.Screen name='InfoPapaClavelaOjona' component={InfoPapaClavelaOjona} />
         <Stack.Screen name='InfoPapaRoja' component={InfoPapaRoja} />
+        <Stack.Screen name='Configuracion' component={Configuracion} />
       </Stack.Navigator>
     </NavigationContainer>
   );
