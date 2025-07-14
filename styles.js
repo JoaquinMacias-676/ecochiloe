@@ -90,4 +90,18 @@ export const styles = StyleSheet.create({
     textShadowRadius: 6,
     textAlign: 'center',
   },
+
+//////////// Configuración
+
+  boton_configuracion: {
+    width: '100%',
+    height: 70,
+    backgroundColor: '#23a768',
+    borderTopColor: '#0c7744',
+    borderTopWidth: 4,
+    borderBottomColor: '#0c7744',
+    borderBottomWidth: 4,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
