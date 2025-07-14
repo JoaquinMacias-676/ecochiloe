@@ -99,9 +99,15 @@ export const styles = StyleSheet.create({
     backgroundColor: '#23a768',
     borderTopColor: '#0c7744',
     borderTopWidth: 4,
-    borderBottomColor: '#0c7744',
-    borderBottomWidth: 4,
     alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+
+  texto_configuracion: {
+    fontSize: 18,
+    fontFamily: 'Roboto Regular',
+    color: 'white',
+    textAlign: 'center',
+    paddingLeft: 20,
   },
 });
