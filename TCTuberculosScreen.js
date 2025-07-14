@@ -22,7 +22,7 @@ export default function Tuberculos({ navigation }) {
             <Text style={styles.titulo_interfaz}>TUBÉRCULOS</Text>
 
             <Pressable
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('Tabs')}
                 style={{
                     position: 'absolute',
                     top: 120,
