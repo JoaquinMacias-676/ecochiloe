@@ -2,8 +2,9 @@
 
 
 <p align="left">
-   <img src="assets/screenshot_1.jpg">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" alt="JavaScript"/>
+   <img src="assets/screenshot_1.jpg" alt="Pantalla principal" width="300"/>
+
+   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" alt="JavaScript"/>
 
 
 
