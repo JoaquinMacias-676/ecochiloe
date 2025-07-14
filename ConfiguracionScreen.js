@@ -13,7 +13,7 @@ export default function Configuracion({ navigation }) {
 
   return (
     <View style={styles.container}>
-        <Text style={[styles.textocolor, { paddingBottom: 100 }]}>CONFIGURACIÓN</Text>
+        <Text style={[styles.textocolor, { paddingBottom: 120 }]}>CONFIGURACIÓN</Text>
         <Pressable
             style={[styles.boton_configuracion, { borderBottomWidth: 4, borderBottomColor: '#0c7744' }]}
             onPress={cerrarSesion}>
