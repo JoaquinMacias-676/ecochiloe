@@ -2,12 +2,8 @@
 
 
 <p align="left">
-   <img src="assets/screenshot_1.jpg" alt="Pantalla principal" width="300"/>
-
-   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" alt="JavaScript"/>
-
-
-
+   <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
+   <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white"/>
 
 
 <img src="1.png" width="200" height="400" /> <img src="2.png" width="200" height="400" /> <img src="3.png" width="200" height="400" />
@@ -16,7 +12,7 @@ Esta es una **aplicacion movil** inspirada en la siembra y cultivo mediante esta
 
 **DESARROLLO EN:**
 
-<img src="https://github.com/JoaKinG4/prueba/blob/main/javascript-logo.png" width="200" height="100" /> <img src="https://github.com/JoaKinG4/prueba/blob/main/react-native%20(1).png" width="200" height="100" />
+<img src="assets/screenshot_1.jpg" alt="Pantalla principal" width="300"/> <img src="https://github.com/JoaKinG4/prueba/blob/main/react-native%20(1).png" width="200" height="100" />
 
 
 ## Descripción de la Aplicacion:
