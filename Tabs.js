@@ -57,10 +57,8 @@ const styles = StyleSheet.create({
   tab_borde: {
     flex: 1,
     backgroundColor: '#0c7744',
-    borderTopWidth: 6,
+    borderTopWidth: 4,
     borderTopColor: '#23a768',
     borderStyle: 'solid',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
   },
 });
