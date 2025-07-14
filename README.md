@@ -2,7 +2,7 @@
 
 
 <p align="left">
-   <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
+   <img src="assets/screenshot_1.jpg">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" alt="JavaScript"/>
 
 
