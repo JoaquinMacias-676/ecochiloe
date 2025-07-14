@@ -30,6 +30,8 @@ export default function IniciarSesion({ navigation }) {
       return;
     }
 
+    const emailNormal = email.trim().toLowerCase();
+
     try {
       const fileUri = FileSystem.documentDirectory + 'cuentas.json';
       const fileExists = await FileSystem.getInfoAsync(fileUri);
@@ -43,11 +45,14 @@ export default function IniciarSesion({ navigation }) {
       const cuentas = JSON.parse(fileContent);
 
       const cuentaEncontrada = cuentas.find(
-        (cuenta) => cuenta.correo === email && cuenta.contraseña === password
+        (cuenta) => cuenta.correo.toLowerCase() === emailNormal && cuenta.contraseña === password
       );
 
       if (cuentaEncontrada) {
-        navigation.navigate('Tabs');
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Tabs' }],
+        });
       } else {
         Alert.alert('Error', 'Correo o contraseña incorrectos.');
       }

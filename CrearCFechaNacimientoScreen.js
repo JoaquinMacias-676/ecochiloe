@@ -56,7 +56,10 @@ export default function FechaNacimiento({ navigation }) {
 
       await FileSystem.writeAsStringAsync(fileUri, JSON.stringify(existingData));
 
-      navigation.navigate('Tabs');
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Tabs' }],
+      });
     } catch (error) {
       console.error('Error al guardar la fecha de nacimiento:', error);
       Alert.alert('Error', 'Ocurrió un error al guardar la fecha de nacimiento.');
