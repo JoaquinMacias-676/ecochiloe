@@ -5,14 +5,13 @@
    <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
 
 
-<img src="1.png" width="200" height="400" /> <img src="2.png" width="200" height="400" /> <img src="3.png" width="200" height="400" />
-
 Esta es una **aplicacion movil** inspirada en la siembra y cultivo mediante esta, **basado en Chiloé** con el fin de llegar a un grupo de personas mas enfatizada en niños que esten cursando basica para generar entretenimiento mediante el conocimiento sobre este tema.
 
 **DESARROLLO EN:**
 
-<img src="assets/screenshot_1.jpg" alt="Pantalla principal" width="300"/> <img src="https://github.com/JoaKinG4/prueba/blob/main/react-native%20(1).png" width="200" height="100" />
-
+<img src="assets/cultivos.jpg" alt="Pantalla principal" width="200" height="100" />
+<img src="assets/medicinales_cultivos.jpg" alt="Pantalla Medicinales" width="200" height="100" />
+<img src="assets/la_murta.jpg" alt="Pantalla Murta" width="200" height="100" />
 
 ## Descripción de la Aplicacion:
 
