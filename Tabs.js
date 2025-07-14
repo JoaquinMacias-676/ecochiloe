@@ -12,7 +12,7 @@ export default function Tabs() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        tabBarActiveTintColor: 'white',
+        tabBarActiveTintColor: '#78e0af',
         tabBarInactiveTintColor: 'black',
         tabBarLabelStyle: {
             fontFamily: 'Baloo 2 Bold',
