@@ -7,7 +7,7 @@
 
 Esta es una **aplicacion movil** inspirada en la siembra y cultivo mediante esta, **basado en Chiloé** con el fin de llegar a un grupo de personas mas enfatizada en niños que esten cursando basica para generar entretenimiento mediante el conocimiento sobre este tema.
 
-**DESARROLLO EN:**
+**EJEMPLO DE PANTALLAS:**
 
 <img src="assets/muestra_app.jpg" alt="Pantalla principal" width="800" height="600" />
 
