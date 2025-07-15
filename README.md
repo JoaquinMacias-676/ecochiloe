@@ -9,7 +9,7 @@ Esta es una **aplicacion movil** inspirada en la siembra y cultivo mediante esta
 
 **DESARROLLO EN:**
 
-<img src="assets/muestra_app.jpg" alt="Pantalla principal" width="600" height="400" />
+<img src="assets/muestra_app.jpg" alt="Pantalla principal" width="800" height="600" />
 
 
 ## Descripción de la Aplicacion:
