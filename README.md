@@ -11,7 +11,6 @@ Esta es una **aplicacion movil** inspirada en la siembra y cultivo mediante esta
 
 <img src="assets/cultivos.jpg" alt="Pantalla principal" width="100" height="200" />
 <img src="assets/medicinales_cultivos.jpg" alt="Pantalla Medicinales" width="100" height="200" />
-<img src="assets/la_murta.jpg" alt="Pantalla Murta" width="100" height="200" />
 
 ## Descripción de la Aplicacion:
 
