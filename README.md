@@ -1,9 +1,7 @@
 # App Móvil Siembra y Cultivo (EcoChiloé) 
 
-
 <p align="left">
    <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=plastic">
-
 
 Esta es una **aplicacion movil** inspirada en la siembra y cultivo mediante esta, **basado en Chiloé** con el fin de llegar a un grupo de personas mas enfatizada en niños que esten cursando basica para generar entretenimiento mediante el conocimiento sobre este tema.
 
@@ -20,6 +18,7 @@ Como alcance queremos:
 - **Aprender cuándo y cómo sembrar**
 - **Conocer cuidados y riesgos de los cultivos**
 - **Ver información sobre diferentes variedades locales**
+
 La app no contara con:
 - **Venta de productos**
 - **Compra de insumos agrícolas**
@@ -31,11 +30,7 @@ El objetivo del análisis es identificar los contaminantes más importantes en d
 
 La estructura del proyecto es la siguiente:
 
-
-
-
 ###  **Objetivos**
-
 
 **General**
 
@@ -48,6 +43,5 @@ agrícola, la auto-sustentabilidad y el vínculo con el medio ambiente.
 
 - ✅ **Facilidad de uso** Atractivo e interactivo para su uso.
 - 🔍 **Busqueda amplia** Organizado por conjuntos o por el nombre propio.
-- 📋 **Progreso de cultivos** con seguimiento de etapas de crecimiento.
-- 📚 **Guías interactivas** para cultivo de hortalizas, frutas y cereales.
-- 🧑‍🌾 Comunidad de usuarios con foro de preguntas y consejos.
+- 📚 **Guías interactivas** para cultivo de tubérculos, hortalizas, frutas y medicinales.
+
